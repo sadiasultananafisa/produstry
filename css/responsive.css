@@ -13,12 +13,5 @@
         text-align: center;
         font-size: 12px;
     }
-    .header-icon ul li:hover:hover::after,
-    .header-icon ul li:hover:hover::before,
-    .header-icon ul li:hover:hover a::after,
-    .header-icon ul li:hover:hover a::before{
-        
-        transition: 1s;
-
-}
+   
 }
