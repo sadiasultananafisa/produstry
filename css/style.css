@@ -109,14 +109,15 @@ header{
 }
 /*HEADER ends here*/
 /*NAV starts here*/
+nav{
+  padding: 0!important;
+}
 .navbar img{
   width: 113px;
+  line-height: 113px;
 }
-
- #mycusNav ul li {
-  
+#mycusNav ul li {
   margin-left: 20px;
-  
 }
 #mycusNav a{
   font-weight: 400;
@@ -124,9 +125,7 @@ header{
   font-size: 16px;
   color: var(--secondary-color);
   text-align: center;
-  
 }
-
 #mycusNav ul li{
   position: relative;
 }
@@ -182,14 +181,19 @@ header{
 #mycusNav ul li:hover a{
   color: var(--primary-color);
 }
-.nav-toggler-icon{
+.btn-toggler{
   font-size: 18px;
   color: var(--secondary-color);
   margin-left: 15px;
 }
-.nav-toggler-icon:hover{
+.btn-toggler:hover{
   color: var(--primary-color);
   text-align: center;
 }
+.navbar-brand a{
+  text-align: center;
+  display: inline-block;
+}
+
 /*NAV ends here*/
 /*HOME page starts here*/

@@ -13,5 +13,31 @@
         text-align: center;
         font-size: 12px;
     }
-    
+}
+@media (min-width:992px){
+    nav{
+        min-height: 100px;
+    }
+    nav .container{
+        position: relative;
+        
+    }
+    nav .navlogo{
+        position: absolute;
+        left: 50%;
+        transform: translate(-52%);
+    }
+    #mycusNav ul li{
+        opacity: 0;
+        visibility: hidden;
+    }
+    nav .activemenu{
+        opacity: 1;
+        visibility: visible;
+    }
+    nav .navlogo.activelogo {
+        left: 0%;
+        transform: translateX(0%);
+        transition: 0.5s ease-in-out;
+      }
 }
