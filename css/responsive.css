@@ -14,30 +14,33 @@
         font-size: 12px;
     }
 }
-@media (min-width:992px){
-    nav{
+@media(min-width:992px){
+    #mycusnav ul li{
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    #mycusnav .activenavmenu{
+        opacity: 1;
+        visibility: visible;
+        transition: 0.3s ease-in-out;
+    }
+    nav {
         min-height: 100px;
+        padding: 0!important;
     }
     nav .container{
         position: relative;
-        
     }
     nav .navlogo{
         position: absolute;
         left: 50%;
-        transform: translate(-52%);
+        transform: translateX(-52%);
+        transition: 0.3s ease-in-out;
     }
-    #mycusNav ul li{
-        opacity: 0;
-        visibility: hidden;
-    }
-    nav .activemenu{
-        opacity: 1;
-        visibility: visible;
-    }
-    nav .navlogo.activelogo {
+    nav .activenavlogo{
         left: 0%;
         transform: translateX(0%);
-        transition: 0.5s ease-in-out;
-      }
+        transition: 0.3s ease-in-out;
+    }
 }

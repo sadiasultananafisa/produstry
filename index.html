@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     
@@ -58,16 +59,16 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand navlogo" href="#"><img src="./image/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mycusNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mycusnav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-align-right"></i></span>
         </button>
-        <div class="collapse navbar-collapse" id="mycusNav">
+        <div class="collapse navbar-collapse" id="mycusnav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"> Services</a>
+              <a class="nav-link active" aria-current="page" href="#">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">About Us</a>
@@ -82,21 +83,147 @@
               <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
             </li>
           </ul>
-            <span class="btn-toggler"><i class="fa-solid fa-caret-down"></i></span> 
+              <span class="btn-toggler d-lg-block d-none"><i class="fa-solid fa-align-right"></i></span>
         </div>
       </div>
-    </nav>
-                            
+    </nav>        
     <!--NAV ends here-->
     
-    
+    <!--BANNAR starts here-->
+    <section class="banner">
+      <div class="slider-icon">
+        <div class="right-arrow">
+          <span><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <div class="left-arrow">
+          <span><i class="fa-solid fa-chevron-left"></i></span>
+        </div>
+      </div>
+      <div class="banner-slider">
+        <div class="slide-banner" style="background-image: url(./image/banner.jpg);">
+          <div class="container">
+            <div class="banner-item col-lg-5 d-none d-sm-block">
+              <h3>We Make Your <span>Dream</span></h3>
+              <p>We are the best construction factory on production based ever. 
+                You can get every type ofort in the construction related work from us. Just feel free and come to us. 
+                We will help you to get the best solution.
+              </p>
+              <a href="#">View Solutions</a>
+              <a href="#">Purchase Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide-banner" style="background-image: url(./image/banner2.jpg);">
+            <div class="container">
+              <div class="banner-item col-lg-5 d-none d-sm-block">
+                <h3>We Make Your <span>Dream</span></h3>
+                <p>We are the best construction factory on production based ever. 
+                  You can get every type ofort in the construction related work from us. Just feel free and come to us. 
+                  We will help you to get the best solution.
+                </p>
+                <a href="#">View Solutions</a>
+                <a href="#">Purchase Now</a>
+              </div>
+            </div>
+          </div>
+            <div class="slide-banner" style="background-image: url(./image/banner3.jpg);">
+              <div class="container">
+                <div class="banner-item col-lg-5 d-none d-sm-block">
+                  <h3>We Make Your <span>Dream</span></h3>
+                  <p>We are the best construction factory on production based ever. 
+                    You can get every type ofort in the construction related work from us. Just feel free and come to us. 
+                    We will help you to get the best solution.
+                  </p>
+                  <a href="#">View Solutions</a>
+                  <a href="#">Purchase Now</a>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+    <!--BANNAR ends here-->
+    <!--Our Services starts here-->
+    <section class="Our-Services">
+      <div class="slider-icon">
+        <div class="right-arrow">
+          <span><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <div class="left-arrow">
+          <span><i class="fa-solid fa-chevron-left"></i></span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="service-head ">
+          <h2>Our Services</h2>
+          <p >We provide you a better service. you have no complain about our<br> service, its guaranteed</p>
+        </div>     
+        <div class="servier-slider">
+          <div class="service-card col-4 ">
+            <div class="service-icon">
+                <img src="./image/service-logo1.png" alt="">
+            </div>
+            <div class="service-contant">
+                <h3>Building Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. sit amet consectetur.sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="service-card col-4 ">
+            <div class="service-icon">
+                <img src="./image/service-logo2.png" alt="">
+            </div>
+            <div class="service-contant">
+                <h3>Up lifting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. sit amet consectetur.sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="service-card col-4 ">
+            <div class="service-icon">
+                <img src="./image/service-logo3.png" alt="">
+            </div>
+            <div class="service-contant">
+                <h3>Hard Laborer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. sit amet consectetur.sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="service-card col-4 ">
+            <div class="service-icon">
+                <img src="./image/service-logo1.png" alt="">
+            </div>
+            <div class="service-contant">
+                <h3>Building Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. sit amet consectetur.sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="service-card col-4 ">
+            <div class="service-icon">
+                <img src="./image/service-logo2.png" alt="">
+            </div>
+            <div class="service-contant">
+                <h3>Up lifting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. sit amet consectetur.sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="service-card col-4 ">
+            <div class="service-icon">
+                <img src="./image/service-logo3.png" alt="">
+            </div>
+            <div class="service-contant">
+                <h3>Hard Laborer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. sit amet consectetur.sit amet consectetur.</p>
+            </div>
+          </div>    
+        </div>
+      </div>
+
+    </section>
 
 
 
 
     <!--js files are attached here-->
-    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>
