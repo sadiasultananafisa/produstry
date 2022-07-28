@@ -15,7 +15,6 @@ $(document).ready(function(){
         slidesToShow: 1,
         arrows:true,
         autoplay:true,
-        autoplayspeed:300,
         prevArrow:'.right-arrow',
         nextArrow:'.left-arrow',
     });
@@ -48,7 +47,7 @@ $(document).ready(function(){
           slidesToShow: 3,
           slidesToScroll: 2,
           infinite: true,
-          arrows:false,
+          
         },
       },
       {
@@ -58,7 +57,7 @@ $(document).ready(function(){
           slidesToScroll: 1,
           infinite: true,
           dots: false,
-          arrows:false,
+          
         },
       },
       {
@@ -68,7 +67,7 @@ $(document).ready(function(){
           slidesToScroll: 1,
           infinite: true,
           dots: false,
-          arrows:false,
+          
         },
       },
     ],

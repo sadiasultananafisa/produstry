@@ -182,7 +182,7 @@ header{
 /*NAV ends here*/
 /*BANNAR starts here*/
 .slide-banner{
-  min-height: 702px;
+  min-height: 650px;
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -201,7 +201,7 @@ header{
 }
 .banner-item{
   position: absolute;
-  top: 40%;
+  top: 30%;
   padding: 0 20px!important;
   z-index: 99;
 }
@@ -238,7 +238,7 @@ header{
 }
 .right-arrow{
   position: absolute;
-  top: 80%;
+  top: 65%;
   right: 25px;
   z-index: 999;
   font-size: 26px;
@@ -251,7 +251,7 @@ header{
 }
 .left-arrow{
   position: absolute;
-  top: 80%;
+  top: 65%;
   left: 25px;
   z-index: 999;
   font-size: 26px;
@@ -364,17 +364,19 @@ header{
   transition: 0.3s ease-in;
 }
 
+
 .Our-Services .service-card .service-icon::before {
-  content: "";
-  width: 1px;
-  height: 32px;
-  border: 1px dashed var(--secondary-color);
-  position: absolute;
-  top: 92px;
-  left: 107px;
-  transform: rotate(-45deg);
-  transition: 0.3s ease-in;
+    content: "";
+    width: 1px;
+    height: 32px;
+    border-left: 1px dashed var(--secondary-color);
+    position: absolute;
+    top: 92px;
+    left: 108px;
+    transform: rotate(-45deg);
+    transition: 0.3s ease-in;
 }
+
 .Our-Services .service-card .service-icon img {
   transform: rotate(-45deg);
 }
