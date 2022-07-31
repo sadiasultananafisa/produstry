@@ -44,4 +44,54 @@
         transition: 0.3s ease-in-out;
     }
 }
+/*banner starts here*/
+@media (min-width:320px) and (max-width:575){
+    .slide-banner{
+        height: 400px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .slider-icon{
+        display: none;
+    }
+}
+/*banner ends here*/
+/*ABOUT US starts here*/
+@media (min-width:836px) and (max-width:991px){
+    .about-us-img img {
+        display: none;
+    }
+    .about-us-content {
+        padding-left: 0px;
+        margin-left: 20px;
+    }
+    .about-us-content p{
+        font-size: 14px;
+    }
+    .about-us-content .nav.nav-tabs .nav-link.active,
+    .about-us-content .nav.nav-tabs ul li{
+        display: inline-block;
+    }
+    .about-us-content .nav.nav-tabs .nav-item {
+    
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+}
+@media (min-width:320px) and (max-width:835px){
+    .about-us-img {
+        display: none;
+    }
+    .about-us-content{
+        width: 100%;
+    }
+    .about-us-content h2{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+/*ABOUT US ends here*/
+/*OUR PORTFOLIO starts here*/
 
+/*OUR PORTFOLIO ends here*/
