@@ -28,7 +28,7 @@ $(document).ready(function(){
   $(".servier-slider").slick({
     slidesToShow: 3,
     autoplay:true,
-    autoplayspeed:300,
+    autoplaySpeed:3000000,
     prevArrow:'.right-arrow',
     nextArrow:'.left-arrow',
     responsive: [
@@ -79,20 +79,13 @@ $(function(){
     .nav-link.addClass("active")
 })
 })
-$(function(){
-$('#num1').countMe(7,5);
-  $('#num2').countMe(9,6);
-  $('#num3').countMe(10,8);
-  $('#num4').countMe(11,9);
-
-})
 //*BLOG SLIDER STARTS SLICK
 $(document).ready(function(){
 $('.blog-Slider').slick({
   slidesToShow:3,
   slidesToScroll: 1,
   autoplay:true,
-  autoplayspeed:300,
+  autoplaySpeed:2000,
   centerMode: true,
   centerPadding: "0px",
   prevArrow:'.blog-left-arrow',
@@ -104,7 +97,7 @@ $('.blog-Slider').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true,
+        dots: false,
       },
     },
     {
@@ -123,4 +116,12 @@ $('.blog-Slider').slick({
     },
   ],
 });
+})
+// Counter Up 
+$(document).ready(function(){
+$('#num1').countMe(7,5);
+$('#num2').countMe(9,6);
+$('#num3').countMe(10,8);
+$('#num4').countMe(11,9);
+
 })

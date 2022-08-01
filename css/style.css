@@ -605,23 +605,27 @@ header{
   color: var(--secondary-color);
   padding-bottom: 50px;
 }
-.img-item img{
-  width: 270px;
-  height: 352px;
+.img-item{
+  height: 350px;
+  padding: 0!important;
 }
+.img-item img{
+  width: 260px;
+  height: 350px;
+}
+
 /*OUR PORTFOLIO ends here*/
 /* Counter section starts here */
-#counter-up{
+#counter_up{
   background-image: url(../image/count.jpg);
   background-position: center;
   background-size: cover;
   height: 200px;
   position: relative;
-  z-index: 1;
-  margin: 50px 0;
-  padding: 20px 0;
+  z-index: -1;
+  margin: 40px 0;
 }
-#counter-up::after{
+#counter_up::after{
   position: absolute;
   content: '';
   height: 100%;
@@ -631,17 +635,19 @@ header{
   background-color: rgba(0, 0, 0, 0.75);
   z-index: -1;
 }
-#counter-up .container .row{
+#counter_up .container .row{
   height: 200px;
 }
-#counter-up .count h1{
+#counter_up .count h1{
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 700;
   color: white;
+  z-index: 99;
 }
-#counter-up .count h3{
+#counter_up .count h3{
   font-size: 18px;
   color: white;
+  z-index: 99;
 }
 /* Counter section ends here */
 /* Blog starts here */
@@ -660,7 +666,7 @@ header{
   font-size: 16px;
   color: var(--secondary-color);
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 #blog .blog-img img{
   width: 100%;
@@ -718,7 +724,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:  rgba(0, 0, 0,0.7);
+  background-color:  rgba(0, 0, 0,0.5);
   opacity: 0;
   visibility: hidden;
   transition: ease-in-out all 0.5s;
@@ -741,10 +747,10 @@ header{
 }
 #blog .blog-Slider-Content.slick-center .blog-img {
   transform: translateY(0px);
-  clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 83% 89%, 64% 90%, 46% 92%, 27% 95%, 0 100%);
 }
 #blog .blog-Slider-Content.slick-center .blog-content {
-  transform: translateY(-25px);
+  transform: translateY(-33px);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 #blog .slider-icon .blog-right-arrow{
