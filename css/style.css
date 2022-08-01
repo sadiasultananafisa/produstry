@@ -607,7 +607,7 @@ header{
 }
 .img-item{
   padding: 0!important;
-  width: 220px;
+  width: 230px;
   height: 325px;
   position: relative;
 }
@@ -630,11 +630,12 @@ header{
   transition: 0.3s;
 }
 .portfolio-img{
+  text-align: center;
   justify-content: space-between;
   margin: 0 10px;
 }
 .img-item img{
-  width: 220px;
+  width: 230px;
   height: 100%;
 }
 .img-content{
