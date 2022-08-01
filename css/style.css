@@ -669,7 +669,7 @@ header{
 }
 /*OUR PORTFOLIO ends here*/
 /* Counter section starts here */
-#counter_up{
+#counter-up{
   background-image: url(../image/count.jpg);
   background-position: center;
   background-size: cover;
@@ -678,7 +678,7 @@ header{
   z-index: -1;
   margin: 40px 0;
 }
-#counter_up::after{
+#counter-up::after{
   position: absolute;
   content: '';
   height: 100%;
@@ -688,16 +688,16 @@ header{
   background-color: rgba(0, 0, 0, 0.75);
   z-index: -1;
 }
-#counter_up .container .row{
+#counter-up .container .row{
   height: 200px;
 }
-#counter_up .count h1{
+#counter-up .count h1{
   font-size: 35px;
   font-weight: 700;
   color: white;
   z-index: 99;
 }
-#counter_up .count h3{
+#counter-up .count h3{
   font-size: 18px;
   color: white;
   z-index: 99;
@@ -736,6 +736,7 @@ header{
   transition: ease-in-out all 0.5s;
   padding: 30px 5px 10px 15px;
   text-align: center;
+  display: none;
 }
 #blog .blog-content p{
   font-size: 13px;
@@ -757,6 +758,11 @@ header{
   height: 50px;
   width: 120px;
   background-color: var(--primary-color);
+  transition: 0.3s;
+}
+#blog .blog-content a:hover{
+  color: white;
+  
 }
 #blog .blog-content .social-icon{
   padding: 0;
@@ -800,11 +806,12 @@ header{
 }
 #blog .blog-Slider-Content.slick-center .blog-img {
   transform: translateY(0px);
-  clip-path: polygon(0 0, 100% 0, 100% 88%, 83% 89%, 64% 90%, 46% 92%, 27% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 54% 92%, 0 100%);
 }
 #blog .blog-Slider-Content.slick-center .blog-content {
   transform: translateY(-33px);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
 }
 #blog .slider-icon .blog-right-arrow{
   position: absolute;

@@ -93,7 +93,48 @@
 }
 /*ABOUT US ends here*/
 /*OUR PORTFOLIO starts here*/
+@media (min-width:992px) and (max-width:1200px){
+    .img-item img{
+        width: 215px;
+      }
+    .img-item{
+        width: 215px;
+      }
+}
 @media (min-width:768px) and (max-width:991px){
+    .portfolio-img{
+        justify-content: space-evenly;
+    }
+    .img-item{
+        margin-bottom: 50px;
+        width: 270px;
+    }
+    .img-item img{
+        width: 270px;
+      }
     
 }
+@media (min-width:320px) and (max-width:767px){
+    .portfolio-img{
+        justify-content: space-evenly;
+    }
+    .img-item{
+        margin-bottom: 20px;
+        width: 290px;
+    }
+    .img-item img{
+        width: 290px;
+      }
+}
 /*OUR PORTFOLIO ends here*/
+/*blogs starts here*/
+@media (min-width:768px) and (max-width:991px){
+    #blog .blog-content{
+        padding: 60px 10px 10px 10px;
+        
+      }
+      #blog .blog-Slider-Content.slick-center .blog-content {
+        transform: translateY(-75px);
+    }
+}
+/*blogs ends here*/
