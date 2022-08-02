@@ -616,18 +616,10 @@ header{
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 0;
-  background-color: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
   position: absolute;
  z-index: 1;
-  transition: 0.3s;
-  
-  visibility: hidden;
-}
-.img-item:hover::after{
-  visibility: visible;
-  height: 100%;
-  transition: 0.3s;
 }
 .portfolio-img{
   text-align: center;
@@ -641,21 +633,20 @@ header{
 .img-content{
   height: 0;
   width: 100%;
-  padding-top: 55px;
+  padding-top: 70px;
   position: absolute;
   text-align: center;
   clip-path: polygon(0 41%, 100% 0, 100% 100%, 0 100%);
   background-color:rgba(255, 202, 54, 0.9);
   bottom: 0;
   left: 0;
-  right: 0;
   z-index: 9;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out all;
   visibility: hidden;
 }
 .img-item:hover .img-content{
   visibility: visible;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out all;
   height: 157px;
 }
 .img-content h4{
@@ -719,7 +710,7 @@ header{
   font-size: 16px;
   color: var(--secondary-color);
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 #blog .blog-img img{
   width: 100%;
@@ -734,7 +725,7 @@ header{
   position: relative;
   transform: translateY(-50%);
   transition: ease-in-out all 0.5s;
-  padding: 30px 5px 10px 15px;
+  padding: 40px 5px 10px 15px;
   text-align: center;
   display: none;
 }
@@ -809,9 +800,10 @@ header{
   clip-path: polygon(0 0, 100% 0, 100% 87%, 54% 92%, 0 100%);
 }
 #blog .blog-Slider-Content.slick-center .blog-content {
-  transform: translateY(-33px);
+  transform: translateY(-50px);
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
+  padding-top: 60px;
 }
 #blog .slider-icon .blog-right-arrow{
   position: absolute;

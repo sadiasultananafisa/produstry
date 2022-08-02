@@ -84,7 +84,7 @@ $(document).ready(function(){
 $('.blog-Slider').slick({
   slidesToShow:3,
   slidesToScroll: 1,
-  autoplay:true,
+  autoplay:false,
   autoplaySpeed:2000,
   centerMode: true,
   centerPadding: "0px",
