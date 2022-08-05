@@ -180,8 +180,6 @@ $(document).ready(function(){
     autoplaySpeed:2000,
     centerMode: true,
     centerPadding: "0px",
-    prevArrow:'.blog-right-arrow',
-    nextArrow:'.blog-left-arrow',
     /*responsive: [
       {
         breakpoint: 1024,
