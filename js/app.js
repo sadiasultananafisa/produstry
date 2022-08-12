@@ -79,6 +79,41 @@ $(function(){
     .nav-link.addClass("active")
 })
 })
+//*portfolio starts here
+$(document).ready(function(){
+  $('.Portfolio-slider').slick({
+    slidesToShow:4,
+    slidesToScroll: 1,
+    autoplay:true,
+    autoplaySpeed:2000,
+    arrows:false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+  })
 //*BLOG SLIDER STARTS SLICK
 $(document).ready(function(){
 $('.blog-Slider').slick({
@@ -139,8 +174,8 @@ $('#num4').countMe(11,9);
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             infinite: true,
             dots: false,
           },
@@ -167,9 +202,38 @@ $('#num4').countMe(11,9);
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: "0px",
-    prevArrow:'.testimonial-left-arrow',
-   nextArrow:'.testimonial-right-arrow',
+    prevArrow:'.testimonial-right-arrow',
+   nextArrow:'.testimonial-left-arrow',
    asNavFor: '.testimonial-slider',
+   responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+  ],
   })
 });
 $(document).ready(function(){
@@ -182,5 +246,34 @@ $(document).ready(function(){
     centerPadding: "0px",
     prevArrow:'.brand-right-arrow',
     nextArrow:'.brand-left-arrow',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+    ],
   });
   })
