@@ -589,13 +589,17 @@ header{
   padding-left: 0;
 }
 .tab-pane a{
+  font-weight: 600;
   font-size: 16px;
   padding: 10px;
   color: var(--secondary-color);
   background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 .tab-pane a:hover{
-  color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: white;
 }
 /*ABOUT ends here*/
 /*OUR PORTFOLIO starts here*/
@@ -731,10 +735,13 @@ header{
   height: 50px;
   width: 120px;
   background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   transition: 0.3s;
 }
 #blog .blog-content a:hover{
-  color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: white;
   
 }
 #blog .blog-content .social-icon{
