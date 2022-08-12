@@ -548,15 +548,19 @@ header{
 .about-us-content .nav-tabs {
   border-bottom: 5px solid #dee2e6;
 }
-.about-us-content .nav-tabs .nav-link.active::after{
+.about-us-content .nav-tabs .nav-link::after{
   content: '';
   bottom: -5px;
   left: 0;
-  width: 100%;
+  width: 0;
   height: 5px;
   background-color: var(--primary-color)!important;
   z-index: 99;
   position: absolute;
+  transition: 0.3s all linear;
+}
+.about-us-content .nav-tabs .nav-link.active::after{
+  width: 100%;
 }
 .about-us-content .nav-tabs .nav-link::before{
   content: '';
@@ -567,10 +571,9 @@ header{
   background-color: var(--primary-color)!important;
   z-index: 99;
   position: absolute;
-  opacity: 0;
-  visibility: none;
+  transition: 0.3s all linear;
 }
-.about-us-content .nav-tabs .nav-link:hover ::before{
+.about-us-content .nav-tabs .nav-link:hover::before{
   visibility: visible;
   opacity: 1;
   width: 100%;
