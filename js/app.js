@@ -1,12 +1,45 @@
-$(function(){
-    $(".btn-toggler").click(function(){
-        let navmenu= $("#mycusnav ul li")
-        let logo= $("nav .navlogo")
-        navmenu.toggleClass("activenavmenu")
-        logo.toggleClass("activenavlogo")
+$(document).ready(function(){
+  $(window).on('load', function () {
+    $('.preloader').fadeOut(2000);
+ })
+  $(".btn-toggler").click(function(){
+      let navmenu= $("#mycusnav ul li")
+      let logo= $("nav .navlogo")
+      navmenu.toggleClass("activenavmenu")
+      logo.toggleClass("activenavlogo")
     })
-}
-)
+  $(window).on("scroll",function(){
+      if($(window).scrollTop() > $(".navbar").height()){
+       $(".navbar").addClass("nav_anim")
+      }else{
+       $(".navbar").removeClass("nav_anim")
+      }
+    })
+  $(window).on('scroll', function(){
+      if ($(this).scrollTop() > 200) {
+          $('#backToTop').fadeIn()
+       } else {
+          $('#backToTop').fadeOut(1000)
+       }
+  })
+  $('#backToTop').on('click', function () {
+     $('html,body').animate({
+        scrollTop: 0,
+     },2000)
+  })
+ $("a").on("click", function (event) {
+   event.preventDefault();
+   if (this.hash !== "") {
+     var hash = this.hash;
+     $("html,body").animate(
+       {
+         scrollTop: $(hash).offset().top,
+       },
+       1000
+     );
+   }
+})
+})
 /*BANNER starts here*/
 $(document).ready(function(){
     $('.banner-slider').slick({
