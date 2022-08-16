@@ -1,0 +1,116 @@
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*COMMON CSS starts here*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --primary-color: #ffca36;
+  --secondary-color: #353535;
+}
+
+h1, h2, h3, h4, h5, h6, i, span, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  padding: 20px 0;
+  font-size: 35px;
+  font-weight: 300;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+/*COMMON CSS ends here*/
+.about-us-banner {
+  position: relative;
+}
+.about-us-banner .about-bnr-img {
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.about-us-banner .about-bnr-img::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+.about-us-banner .about-us-bnr-item {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  color: white;
+  z-index: 99;
+  text-align: center;
+}
+.about-us-banner .about-us-bnr-item h2 {
+  color: white;
+  padding: 10px 0;
+  font-size: 35px;
+  font-weight: 300;
+}
+.about-us-banner .about-us-bnr-item p {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0 5px;
+}
+.about-us-banner .about-us-bnr-item p a {
+  color: white;
+  transition: all linear 0.3s;
+  padding: 0 5px;
+}
+.about-us-banner .about-us-bnr-item p a:hover {
+  color: var(--primary-color);
+}
+
+#About-Us {
+  padding: 50px 0;
+}
+
+#About-Us h2 {
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.about-us-img {
+  height: 354px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+}
+
+.about-us-content {
+  padding-left: 40px;
+}
+
+.about-us-img img {
+  height: 380px;
+  position: absolute;
+  top: -25px;
+  right: -145px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

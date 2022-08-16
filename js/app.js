@@ -10,9 +10,9 @@ $(document).ready(function(){
     })
   $(window).on("scroll",function(){
       if($(window).scrollTop() > $(".navbar").height()){
-       $(".navbar").addClass("nav_anim")
+       $("#navbar").addClass("nav_anim")
       }else{
-       $(".navbar").removeClass("nav_anim")
+       $("#navbar").removeClass("nav_anim")
       }
     })
   $(window).on('scroll', function(){
