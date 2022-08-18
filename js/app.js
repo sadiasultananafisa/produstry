@@ -310,3 +310,43 @@ $(document).ready(function(){
     ],
   });
   })
+
+
+  //ABOUT US starts here
+  $(document).ready(function(){
+    $('.our-team-Slider').slick({
+      slidesToShow:3,
+      slidesToScroll: 1,
+      autoplay:true,
+      autoplaySpeed:2000,
+      centerMode: true,
+      centerPadding: "0px",
+      prevArrow:'.our-team-right-arrow',
+      nextArrow:'.our-team-left-arrow',
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+    })
