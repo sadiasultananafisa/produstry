@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
   $(window).on('load', function () {
     $('.preloader').fadeOut(2000);
  })
@@ -27,18 +27,6 @@ $(document).ready(function(){
         scrollTop: 0,
      },2000)
   })
- $("a").on("click", function (event) {
-   event.preventDefault();
-   if (this.hash !== "") {
-     var hash = this.hash;
-     $("html,body").animate(
-       {
-         scrollTop: $(hash).offset().top,
-       },
-       1000
-     );
-   }
-})
 })
 /*BANNER starts here*/
 $(document).ready(function(){
@@ -312,17 +300,17 @@ $(document).ready(function(){
   })
 
 
-  //ABOUT US starts here
+//ABOUT US page starts here
   $(document).ready(function(){
-    $('.our-team-Slider').slick({
+    $('.our-team-slider').slick({
       slidesToShow:3,
       slidesToScroll: 1,
-      autoplay:true,
-      autoplaySpeed:2000,
+      autoplay:false,
+      autoplaySpeed:5000,
       centerMode: true,
       centerPadding: "0px",
-      prevArrow:'.our-team-right-arrow',
-      nextArrow:'.our-team-left-arrow',
+      prevArrow:'.team-right-arrow',
+      nextArrow:'.team-left-arrow',
       responsive: [
         {
           breakpoint: 1024,
