@@ -313,7 +313,7 @@ $(document).ready(function(){
       nextArrow:'.team-left-arrow',
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1080,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
@@ -322,17 +322,27 @@ $(document).ready(function(){
           },
         },
         {
-          breakpoint: 991,
+          breakpoint: 1000,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
+            arrows: false,
           },
         },
         {
-          breakpoint: 575,
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 767,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            arrows: false,
           },
         },
       ],

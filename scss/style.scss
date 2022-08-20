@@ -195,7 +195,7 @@ a .nrml-button:hover{
   position: relative;
   .team-right-arrow {
     position: absolute;
-    top: 70%;
+    top: 50%;
     right: 25px;
     z-index: 999;
     font-size: 26px;
@@ -207,7 +207,7 @@ a .nrml-button:hover{
   }
   .team-left-arrow{
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 25px;
     z-index: 999;
     font-size: 26px;
@@ -284,95 +284,91 @@ a .nrml-button:hover{
     transition: 0.5s;
   }
   .team{
-    margin:50px 10px;
+    margin:50px 13px;
     position: relative;
     text-align: center;
+    
     a {
       display: block;
       background-color: #f1f1f1;
-      clip-path: polygon(0 0, 100% 0%, 100% 71%, 0 80%);
+      clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 76%);
+
     }
     .team-info {
       background-color: var(--secondary-color);
       position: absolute;
-      bottom: 25px;
+      top: 71%;
+      bottom: 27px;
       left: 0;
       width: 100%;
       height: 120px;
       color: white;
-      clip-path: polygon(0 40%, 100% 3%, 100% 100%, 0 100%);
+      clip-path: polygon(0 26%, 100% 0%, 100% 100%, 0 100%);
       transition: 0.3s all linear;
       h4{
-        padding-top: 40px;
+        padding-top: 60px;
         text-align: center;
-        font-weight: 400;
-        padding-bottom: 0!important;
-        margin: 0!important;
+        font-weight: 400;   
       }
       p{
         color: #f1f1f1;
         font-weight: 200;
       }
-    }
-    .team-social-icon{
-      display:none;
-    }
-    .team-social-icon a{
-      display: inline-block;
-      margin-right: 5px;
-      color: white;
-      width: 25px;
-      height: 25px;
-      line-height: 25px;
-      text-align: center;
-      background-color: var(--secondary-color);
-      border-radius: 50%;
-      transition: 0.3s all linear;
-    }
-    .team-social-icon a:hover{
-      background-color: #0077b5;
-      transition: 0.3s all linear;
-    }
+      .team-social-icon{
+        visibility: hidden;
+        transform: scale(1);
+        padding: 10px 0;
+        margin-top: 15px;
+      
+        a{
+          display: inline-block;
+          height: 30px;
+          width: 30px;
+          line-height: 30px;
+          border: 1px solid var(--secondary-color);
+          border-radius: 50%;
+          background-color: var(--secondary-color);
+          color: white;
+          margin-right: 10px;
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)!important;
+
+          &:hover{
+            background-color: var(--primary-color);
+            border: 1px solid var(--secondary-color);
+            color: var(--secondary-color);
+          }
+        }
+      }
+   }
   }
   .team.slick-center{
     position: relative;
     overflow: visible;
-
+    
+    a {
+      display: block;
+      background-color: #f1f1f1;
+      clip-path: polygon(0 0, 100% 0%, 100% 63%, 0 70%);
+      transition: 0.3s all linear;
+    }
     .team-info {
       background-color: var(--primary-color);
       position: absolute;
-      bottom: -20px;
+      bottom: 8px;
+      top: 62%;
       left: 0;
       width: 100%;
-      height: 170px;
+      height: 190px;
       color: white;
-      clip-path: polygon(0 35%, 100% 8%, 100% 100%, 0 100%);
-      transition: 0.3s all linear;
+      clip-path: polygon(0 28%, 100% 8%, 100% 100%, 0 100%);
+      transition: 0.35s all linear ;
 
         h4{
-          padding-top: 45px;
+          line-height: 20px;
         }
        .team-social-icon{
-          display: block;
-          text-align: center;
-          overflow: visible;
-          a{
-            display: inline-block;
-            margin-right: 5px;
-            color: white;
-            width: 25px;
-            height: 25px;
-            line-height: 25px;
-            text-align: center;
-            background-color: var(--secondary-color);
-            border-radius: 50%;
-            transition: 0.3s all linear;
-          }
-          .team-social-icon a:hover{
-           background-color: #0077b5;
-           transition: 0.3s all linear;
-          }
-        }
+        visibility: visible;
+       }
     }
   }
 }
