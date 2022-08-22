@@ -126,7 +126,7 @@
   /*NAV starts here*/
   #navbar.nav{
     padding: 20px 0;
-    border-bottom: 5px solid var(--primary-color);
+    
   }
   .navlogo img{
     width: 113px;
@@ -207,6 +207,7 @@
     width:100%;
     background-color: white;
     animation: smooth 0.3s;
+    border-bottom: 5px solid var(--primary-color);
   }
   
   @keyframes smooth {

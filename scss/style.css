@@ -57,7 +57,7 @@ a .nrml-button:hover {
   position: relative;
 }
 .about-us-banner .about-bnr-img {
-  height: 300px;
+  min-height: 250px;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -67,7 +67,7 @@ a .nrml-button:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 1;
@@ -75,7 +75,7 @@ a .nrml-button:hover {
 .about-us-banner .about-us-bnr-item {
   position: absolute;
   top: 30%;
-  left: 40%;
+  left: 45%;
   color: white;
   z-index: 99;
   text-align: center;
@@ -204,7 +204,7 @@ a .nrml-button:hover {
 }
 
 /*Our Mission ends here*/
-/*OUR PORTFOLIO starts here*/
+/*OUR team starts here*/
 #our-team {
   margin: 50px 0 80px 0;
   position: relative;
@@ -302,6 +302,12 @@ a .nrml-button:hover {
   position: relative;
   text-align: center;
 }
+#our-team .team img {
+  text-align: right;
+  padding-left: 10px;
+  padding-top: 20px;
+  height: 520px;
+}
 #our-team .team a {
   display: block;
   background-color: #f1f1f1;
@@ -385,4 +391,74 @@ a .nrml-button:hover {
   visibility: visible;
 }
 
-/*OUR PORTFOLIO ends here*//*# sourceMappingURL=style.css.map */
+/*OUR team ends here*/
+/*OUR PORTFOLIO starts here*/
+#portfolio {
+  margin: 50px 0;
+}
+#portfolio .port-img {
+  position: relative;
+  padding: 0;
+  padding-top: 30px;
+  text-align: center;
+  width: 265px;
+}
+#portfolio .port-img:hover .port-content {
+  opacity: 1;
+  height: 30%;
+}
+#portfolio .port-img img {
+  width: 265px;
+  height: 335px;
+}
+#portfolio .port-img .port-content {
+  background-color: var(--primary-color);
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 0;
+  padding-top: 50px;
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 202, 54, 0.74);
+  transition: all 0.4s ease;
+  -webkit-clip-path: polygon(0% 47%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 47%, 100% 0%, 100% 100%, 0% 100%);
+}
+#portfolio .port-img .port-content h4 {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
+#portfolio .port-img .port-content p {
+  color: #555555;
+  font-size: 14px;
+}
+
+/*OUR PORTFOLIO ends here*/
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--primary-color);
+  padding: 12px;
+  color: #ffffff;
+  border: 1px solid var(--primary-color);
+  border-radius: 10%;
+  z-index: 999999;
+  display: none;
+  cursor: pointer;
+}
+
+.preloader {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 999999999999999;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

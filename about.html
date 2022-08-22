@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./scss/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./scss/style.css">
+  <link rel="stylesheet" href="./css/responsive.css"> 
 </head>
 <body>
-   <!--header starts here-->
-    <header>
+  <div class="preloader">
+    <img src="./image/loadinganimation.gif" alt="">
+  </div>
+  <!--header starts here-->
+  <header>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-3 location">
@@ -53,11 +55,11 @@
             </div>
         </div>
     </div>
-    </header>
-   <!--header ends here-->
+  </header>
+  <!--header ends here-->
 
-   <!--NAV starts here-->
-   <nav class="navbar navbar-expand-lg nav" id="navbar">
+  <!--NAV starts here-->
+  <nav class="navbar navbar-expand-lg nav" id="navbar">
     <div class="container">
       <a class="navbar-brand navlogo" href="#"><img src="./image/logo.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mycusnav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +77,7 @@
             <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+            <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Our Blog</a>
@@ -90,8 +92,8 @@
   </nav>        
   <!--NAV ends here-->
 
-   <!--BANNAR starts here-->
-    <section id="about-us-banner">
+  <!--BANNAR starts here-->
+  <section id="about-us-banner">
      <div class="about-us-banner">
         <div class="about-bnr-img" style="background-image: url(./image2/About_Us.jpg);">
           <div class="container">
@@ -102,11 +104,11 @@
           </div>
         </div>
       </div>
-    </section>
-   <!--BANNAR ends here-->
+  </section>
+  <!--BANNAR ends here-->
   
-   <!--About prodestry starts here-->
-    <section id="about-produstry">
+  <!--About prodestry starts here-->
+  <section id="about-produstry">
       <div class="about-produstry">
         <div class="row mx-0 justify-content-between">
           <div class="about-produstry-img col-md-5 " style="background-image: url(./image2/About-Produstry.jpg);">
@@ -128,11 +130,11 @@
           </div>
         </div>
       </div>
-    </section>
-    <!--ABOUT prodestry ends here-->
+  </section>
+  <!--ABOUT prodestry ends here-->
 
-    <!--Our Mission starts here-->
-    <section id="our-mission">
+  <!--Our Mission starts here-->
+  <section id="our-mission">
       <div class="our-mission">
         <div class="row mx-0 justify-content-between">
           <div class="our-mission-content col-md-6 container">
@@ -152,13 +154,13 @@
           </div>
         </div>
       </div>
-    </section>
-    <!--Our Mission ends here-->
+  </section>
+  <!--Our Mission ends here-->
 
-    <!--OUR PORTFOLIO ends here-->
+    <!--OUR PORTFOLIO starts here-->
     <section id="our-team">
       <div class="our-team">
-        <h2>Our Portfolio</h2>
+        <h2>Our Team</h2>
         <p>We provide you a better service. you have no complain about our service,<br>it's guarantted.</p>
         <div class="slider-icon d-none d-lg-block">
           <div class="team-right-arrow">
@@ -184,7 +186,21 @@
             </div>
           </div>
           <div class="team col-md-4 col-sm-12">
-            <a href="#"><img src="./image2/our-team1.png" alt=""></a>
+            <a href="#"><img src="./image2/our-team2.png" alt=""></a>
+            <div class="team-info">
+              <h4>Architectural</h4>
+              <p>Building/Architict</p>
+              <div class="team-social-icon d-md-block d-none">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="team col-md-4 col-sm-12">
+            <a href="#"><img src="./image2/our-team3.png" alt=""></a>
             <div class="team-info">
               <h4>Architectural</h4>
               <p>Building/Architict</p>
@@ -212,7 +228,7 @@
             </div>
           </div>
           <div class="team col-md-4 col-sm-12">
-            <a href="#"><img src="./image2/our-team1.png" alt=""></a>
+            <a href="#"><img src="./image2/our-team2.png" alt=""></a>
             <div class="team-info">
               <h4>Architectural</h4>
               <p>Building/Architict</p>
@@ -226,21 +242,7 @@
             </div>
           </div>
           <div class="team col-md-4 col-sm-12">
-            <a href="#"><img src="./image2/our-team1.png" alt=""></a>
-            <div class="team-info">
-              <h4>Architectural</h4>
-              <p>Building/Architict</p>
-              <div class="team-social-icon d-md-block d-none">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="team col-md-4 col-sm-12">
-            <a href="#"><img src="./image2/our-team1.png" alt=""></a>
+            <a href="#"><img src="./image2/our-team3.png" alt=""></a>
             <div class="team-info">
               <h4>Architectural</h4>
               <p>Building/Architict</p>
@@ -380,6 +382,11 @@
 
     
 
+  <section>
+    <button id="backToTop">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
+</section> 
 
     <!--js files are attached here-->
     <script src="./js/jquery-3.6.0.min.js"></script>
