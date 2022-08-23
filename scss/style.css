@@ -88,17 +88,13 @@ a .nrml-button:hover {
 }
 .about-us-banner .about-us-bnr-item p {
   color: white;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   padding: 0 5px;
 }
 .about-us-banner .about-us-bnr-item p a {
-  color: white;
-  transition: all linear 0.3s;
-  padding: 0 5px;
-}
-.about-us-banner .about-us-bnr-item p a:hover {
   color: var(--primary-color);
+  padding: 0 5px;
 }
 
 /*BANNAR ends here*/
@@ -395,6 +391,7 @@ a .nrml-button:hover {
 /*OUR PORTFOLIO starts here*/
 #portfolio {
   margin: 50px 0;
+  text-align: center;
 }
 #portfolio .port-img {
   position: relative;
@@ -405,7 +402,7 @@ a .nrml-button:hover {
 }
 #portfolio .port-img:hover .port-content {
   opacity: 1;
-  height: 30%;
+  height: 40%;
 }
 #portfolio .port-img img {
   width: 265px;
@@ -417,7 +414,7 @@ a .nrml-button:hover {
   z-index: 999;
   width: 100%;
   height: 0;
-  padding-top: 50px;
+  padding-top: 80px;
   opacity: 0;
   left: 0;
   bottom: 0;
@@ -435,8 +432,175 @@ a .nrml-button:hover {
   color: #555555;
   font-size: 14px;
 }
+#portfolio .port-button {
+  margin-top: 50px;
+}
+#portfolio .port-button a {
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 500;
+}
+#portfolio .port-button a i {
+  padding: 0 7px;
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear;
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+#portfolio .port-button a:hover {
+  background-color: #f1f1f1;
+}
 
 /*OUR PORTFOLIO ends here*/
+/*contact us page starts here*/
+#contact-address {
+  padding: 60px 0;
+}
+#contact-address .address i {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ffca36;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+#contact-address .address p {
+  color: var(--secondary-color);
+  padding: 20px 0;
+  position: relative;
+  transition: all 0.5s linear;
+  font-size: 14px;
+}
+#contact-address .address p::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #c4c4c4;
+  top: 0;
+  right: -16px;
+}
+#contact-address .address p a {
+  color: #353535;
+  position: relative;
+  transition: all 0.5s linear;
+  font-size: 14px;
+  margin-top: 5px;
+}
+#contact-address .address p a:hover {
+  color: #ffca36;
+}
+#contact-address .address .address .col-sm-4:last-child .address-info > p:before {
+  height: 0;
+}
+
+/*contact us map starts here*/
+#contact-map {
+  margin-bottom: 60px;
+  text-align: center;
+}
+#contact-map .map-part {
+  width: 100%;
+  min-height: 358px;
+  border: 0;
+  display: block;
+  position: relative;
+  z-index: -1;
+}
+#contact-map .map-part::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+#contact-map .map-part iframe {
+  width: 100%;
+  min-height: 358px;
+}
+#contact-map .map-part i {
+  font-size: 50px;
+  color: #ffca36;
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  z-index: 9;
+}
+
+/*contact us form ends here*/
+#contact-form {
+  padding: 40px 0 100px 0;
+}
+
+.contact_form_col {
+  background: url(../image2/contact-form.jpg) left top no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+}
+
+.contact_form_col .row .col-sm-5 {
+  background-color: #fff;
+  padding: 10px 30px 40px 30px;
+  box-shadow: 0px 1px 8px 4px #999;
+}
+
+.contact_form_col form input,
+.contact_form_col form textarea {
+  color: #777;
+  text-transform: capitalize;
+  resize: none;
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  font-size: 13px;
+}
+
+.contact_form_col form textarea {
+  width: 100%;
+  height: 132px;
+  resize: none;
+  padding: 6px 12px;
+}
+
+.contact_form_col form button {
+  border-style: none;
+  background-color: #ffca36;
+  font-size: 16px;
+  color: #353535;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0;
+  margin-top: 30px;
+  transition: all 0.3s linear;
+}
+
+.contact_form_col form .form-group {
+  margin-bottom: 30px;
+}
+
+/*contact us page ends here*/
 #backToTop {
   position: fixed;
   bottom: 30px;
