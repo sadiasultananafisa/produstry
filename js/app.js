@@ -331,4 +331,43 @@ $(document).ready(function(){
         },
       ],
     });
+  //contact us form 
+  $("input").click(function(){
+    let activeform=$(".form-control")
+    activeform .toggleClass("border-shadow")
+   })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     })

@@ -541,38 +541,44 @@ a .nrml-button:hover{
 }
 /*contact us form ends here*/
 #contact-form {
-  padding: 40px 0 100px 0
-}
-.contact_form_col {
-  background: url(../image2/contact-form.jpg) left top no-repeat;
+  padding: 40px 0 100px 0;
+  
+
+.contact-form-col {
+  background: url(../image/contact-form.jpg);
   background-size: cover;
-  padding: 30px 0;
-}
+  position: relative;
+  min-height: 510px;
+  margin: 40px 0;
 
-.contact_form_col .row .col-sm-5 {
+.row{
   background-color: #fff;
-  padding: 10px 30px 40px 30px;
-  box-shadow: 0px 1px 8px 4px #999
-}
+  padding: 30px;
+  box-shadow: 0px 1px 8px 4px #999;
+  position: absolute;
+  align-items: center;
+  right: 7%;
+  top: 5%;
 
-.contact_form_col form input,
-.contact_form_col form textarea {
+  form .contact-form-items{
+    margin-bottom: 30px;
+  }
+  form input,
+  form textarea {
   color: #777;
   text-transform: capitalize;
   resize: none;
   border: 1px solid #ddd;
   border-radius: 0px;
   font-size: 13px;
-}
-
-.contact_form_col form textarea {
+  }
+  form textarea {
   width: 100%;
   height: 132px;
   resize: none;
   padding: 6px 12px;
 }
-
-.contact_form_col form button {
+form button {
   border-style: none;
   background-color: #ffca36;
   font-size: 16px;
@@ -586,11 +592,14 @@ a .nrml-button:hover{
   margin-top: 30px;
   transition: all 0.3s linear;
 }
-
-.contact_form_col form .form-group {
-  margin-bottom: 30px;
+.border-shadow{
+  box-shadow: -1px -1px 10px 2px rgba(62,124,245,0.98);
+ -webkit-box-shadow: -1px -1px 10px 2px rgba(62,124,245,0.98);
+ -moz-box-shadow: -1px -1px 10px 2px rgba(62,124,245,0.98);
 }
-
+}
+}
+}
 
 /*contact us page ends here*/
 #backToTop{
