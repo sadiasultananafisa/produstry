@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact us</title>
+    <title>blog list view</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -98,8 +98,8 @@
         <div class="about-bnr-img d-sm-block" style="background-image: url(./image/About_Us.jpg);">
           <div class="container">
             <div class="about-us-bnr-item mx-auto">
-                <h2>Contact Us</h2>
-                <p>Home <i class="fa-solid fa-angles-right"></i> <a href="#">Contact Us</a></p>
+                <h2>BLOG LIST VIEW</h2>
+                <p>Home <i class="fa-solid fa-angles-right"></i> <a href="#">Blog List View</a></p>
             </div>
           </div>
         </div>
@@ -107,86 +107,173 @@
   </section>
   <!--BANNAR ends here-->
 
-  <!-- contact address starts here-->
-  <section id="contact-address">
+  <!--blog list view starts here-->
+  
+  <!--blog list grid-->
+  <section id="blog-view">
     <div class="container">
-      <div class="row address">
-          <div class="col-sm-4 text-center">
-            <i class="fa-solid fa-location-dot"></i>
-            <div class="address-info">
-               <p>69, Halsey st. New York, NY 10002, Park street Avenue United Staes (US).</p>
+      <div class="row blog-grid align-content-between">
+        <div class="col-md-4 col-sm-2 sort-icon">
+          <a href="blog-grid.html"><span><i class="fa-solid fa-grip"></i></span></a>
+          <a href="blog-list.html"><span><i class="fa-solid fa-list"></i></span></a>
+        </div>
+          <div class="col-md-4 col-sm-5 midle_col sort-select"> 
+            <span>Sort by :</span>
+              <select name="" id="">
+                <option value="">Name</option>
+                <option value="">Name</option>
+                <option value="">Name</option>
+              </select>
+            <span>Showing :</span>
+              <select name="" id="">
+                <option value="">12</option>
+                <option value="">12</option>
+                <option value="">12</option>
+              </select> 
+          </div>
+          <div class="pages col-md-4 col-sm-5 d-flex align-content-center">
+            <p>Pages :</p>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>  
+      </div>
+  </section>
+  <!--blog list-->
+  <section id="bloglist">
+    <div class="container">
+     <div class="row align-content-between">
+      <!--blog posts starts here-->
+      <div class="blogpost col-sm-7">
+        <div class="blog-single-post">
+          <div class="blogpost-img">
+            <img src="./image/bloglist1.jpg" alt="">
+            <div class="bloglist-contant mx-0">
+              <h4>Finding New Buildings in the Dust of the Old Never Seen Before</h4>
+              <div class="row justify-content-between">
+                  <div class="blogpost-social-icon col-lg-6">
+                    <a href="#"><i class="fa-solid fa-user"></i>By: Admin</a>
+                  </div>
+                  <div class="blogpost-social-icon col-lg-6">
+                    <a href="#"><i class="fa-solid fa-thumbs-up"></i>2.5k Likes</a>
+                    <a href="#"><i class="fa-solid fa-comments"></i>1.5k Comments</a>
+                  </div>
+              </div>
+              <p class="blogpost-details mx-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsumas been the duy's standard dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrabled it to make a type specimen book. It has survived not only five centuries,
+                  but also the leap into electronicting. 
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry<BR>
+              </p>
+              <a href="#" class="read-more">READ MORE</a>
             </div>
           </div>
-          <div class="col-sm-4 text-center">
-              <i class="fa fa-envelope"></i>
-              <div class="address-info">
-                <p>
-                   <a href="#">Produstry@industry.com</a> , 
-                   <a href="#">industry@produstry.com</a>
-                    <a href="#">Admin@info.com</a> , 
-                    <a href="#">info@admin.com</a>
-                </p>
+        </div>
+        <div class="blog-single-post">
+          <div class="blogpost-img">
+            <img src="./image/bloglist2.jpg" alt="">
+            <div class="bloglist-contant mx-0">
+              <h4>Finding New Buildings in the Dust of the Old Never Seen Before</h4>
+              <div class="row justify-content-between">
+                  <div class="blogpost-social-icon col-lg-6">
+                    <a href="#"><i class="fa-solid fa-user"></i>By: Admin</a>
+                  </div>
+                  <div class="blogpost-social-icon col-lg-6">
+                    <a href="#"><i class="fa-solid fa-thumbs-up"></i>2.5k Likes</a>
+                    <a href="#"><i class="fa-solid fa-comments"></i>1.5k Comments</a>
+                  </div>
               </div>
+              <p class="blogpost-details mx-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsumas been the duy's standard dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrabled it to make a type specimen book. It has survived not only five centuries,
+                  but also the leap into electronicting. 
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry<BR>
+              </p>
+              <a href="#" class="read-more">READ MORE</a>
+            </div>
           </div>
-          <div class="col-sm-4 text-center">
-                <i class="fa fa-globe"></i>
-                <div class="address-info">
-                    <p>
-                        <a href="#">www.produstry-industry.com</a> , 
-                        <a href="#">www.produstry-info.com</a>
-                        <a href="#">www.production-industry.com</a>
-                    </p>
-                </div>
+        </div>
+        <div class="blog-single-post">
+          <div class="blogpost-img">
+            <img src="./image/bloglist3.jpg" alt="">
+            <div class="bloglist-contant mx-0">
+              <h4>Finding New Buildings in the Dust of the Old Never Seen Before</h4>
+              <div class="row justify-content-between">
+                  <div class="blogpost-social-icon col-lg-6">
+                    <a href="#"><i class="fa-solid fa-user"></i>By: Admin</a>
+                  </div>
+                  <div class="blogpost-social-icon col-lg-6">
+                    <a href="#"><i class="fa-solid fa-thumbs-up"></i>2.5k Likes</a>
+                    <a href="#"><i class="fa-solid fa-comments"></i>1.5k Comments</a>
+                  </div>
+              </div>
+              <p class="blogpost-details mx-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsumas been the duy's standard dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrabled it to make a type specimen book. It has survived not only five centuries,
+                  but also the leap into electronicting. 
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry<BR>
+              </p>
+              <a href="#" class="read-more">READ MORE</a>
+            </div>
           </div>
+        </div>
       </div>
-    </div>
-</section>
-  <!--contact address ends here-->
-  <!--contact map starts here-->
-  <section id="contact-map">
-    <div id="map" class="map-part">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14759.705111367532!2d91.83965335!3d22.35641235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad276490aa5a4f%3A0x8824f17fe9fd9668!2sGulzar%20Tower!5e0!3m2!1sen!2sbd!4v1661237429816!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="contact-loc-icon">
-        <i class="fa-solid fa-location-dot"></i>   
-      </div>
-    </div>      
-  </section>
-  <!--contact map ends here--> 
 
-  <!--contact us form starts here--> 
-  <section id="contact-form">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <div class="contact-form-head">
-            <h2>Sign up for Newsletter</h2>
-            <p>
-              We provide you a better service. you have no complain about our service,<br> it’s guaranteed.
-            </p>
+      <!--blog list mix it up starts here -->
+      <div class=" col-sm-4 ">
+        <div class="post-filter">
+           <ul>
+              <li><button type="button" data-filter=".Popular ">Popular </button></li>
+              <li><button type="button" data-filter=".Recent"> Recent</button></li>
+              <li><button type="button" data-filter=".Latest"> Latest</button></li>
+           </ul>
+           <div class="post-filter-content">
+             <div class="mix Popular row">
+               <div class="post-filter-img col-sm-3">
+                <a href="#"><img src="./image/latest-news1.png" alt="blog_single_img"></a>
+               </div>
+               <div class="post-filter-details col-sm-9">
+                 <h6>Nice Newest Construction Factory Work</h6>
+                 <p>26 October 2017</p>
+                 <span class="col-4"><a href="#"><i class="fa fa-user"></i><span> By : Admin</span></a></span>
+                 <span class="col-4"><a href="#"><i class="fa fa-thumbs-up"></i><span> 2.5k likes</span></a></span>
+                 <span class="col-4"><a href="#"><i class="fa fa-comments"></i><span> 1.5k Comments</span></a></span>
+               </div>
+             </div>
           </div>
-        </div>
-      </div>    
-        <div class="contact-form-col"> 
-          <div class="row col-sm-5 col-sm-offset-6"> 
-            <form>
-              <div class="contact-form-items col-sm-12">
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
-              </div>
-              <div class="contact-form-items col-sm-12">
-                <input type="text" class="form-control" id="exampleInputEmail2" placeholder="E-mail"> 
-              </div>
-              <div class="contact-form-items col-sm-12">
-                <textarea name="txtarea" placeholder="Message"></textarea>
-              </div>
-              <div class="contact-form-items col-sm-12">
-                <button type="submit" class="btn btn-default">Submit</button>
-              </div>
-            </form>
-          </div> 
-        </div>
+         </div>
+       </div>
+     </div>
+      <!--blog button starts here-->
+      <div class="blog-button">
+        <a href="#"> NEXT PAGE</a>
+      </div>
     </div>
   </section>
-  <!--contact us form ends here--> 
+
+
+
+  <!--blog list view ends here-->
+
+
+
   <!--footer starts here-->
   <section id="footer">
     <div class="container">
@@ -299,6 +386,7 @@
 
   <!--js files are attached here-->
   <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/mixitup.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/countMe.min.js"></script>
   <script src="./js/slick.min.js"></script>

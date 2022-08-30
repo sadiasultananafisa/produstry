@@ -57,7 +57,7 @@ a .nrml-button:hover {
   position: relative;
 }
 .about-us-banner .about-bnr-img {
-  min-height: 250px;
+  min-height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -75,7 +75,7 @@ a .nrml-button:hover {
 .about-us-banner .about-us-bnr-item {
   position: absolute;
   top: 30%;
-  left: 45%;
+  left: 43%;
   color: white;
   z-index: 99;
   text-align: center;
@@ -579,6 +579,11 @@ a .nrml-button:hover {
   border-radius: 0px;
   font-size: 13px;
 }
+#contact-form .contact-form-col .row input:focus {
+  box-shadow: 0px 0px 9px 3px rgb(178, 219, 237);
+  -webkit-box-shadow: 0px 0px 9px 3px rgb(178, 219, 237);
+  -moz-box-shadow: 0px 0px 9px 3px rgb(178, 219, 237);
+}
 #contact-form .contact-form-col .row form textarea {
   width: 100%;
   height: 132px;
@@ -599,13 +604,215 @@ a .nrml-button:hover {
   margin-top: 30px;
   transition: all 0.3s linear;
 }
-#contact-form .contact-form-col .row .border-shadow {
-  box-shadow: -1px -1px 10px 2px rgba(62, 124, 245, 0.98);
-  -webkit-box-shadow: -1px -1px 10px 2px rgba(62, 124, 245, 0.98);
-  -moz-box-shadow: -1px -1px 10px 2px rgba(62, 124, 245, 0.98);
+#contact-form .contact-form-col .row form button:hover {
+  background-color: #f1f1f1;
+}
+#contact-form .contact-form-col .row form button:focus {
+  border: 1px solid black;
+  border-radius: 3%;
 }
 
 /*contact us page ends here*/
+/*blog list view*/
+#blog-view {
+  margin: 80px 0;
+}
+#blog-view .blog-grid {
+  border: 1px solid #dddddd;
+  padding: 13px;
+}
+#blog-view .blog-grid .sort-icon {
+  font-size: 22px;
+}
+#blog-view .blog-grid .sort-icon a {
+  padding: 7px 10px;
+  border: 1px solid #555555;
+  transition: 0.3s all linear;
+}
+#blog-view .blog-grid .sort-icon a:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: 0.3s all linear;
+}
+#blog-view .blog-grid .sort-icon a i {
+  color: var(--secondary-color);
+}
+#blog-view .blog-grid .sort-select {
+  font-size: 14px;
+}
+#blog-view .blog-grid .sort-select span {
+  padding: 0 3px;
+}
+#blog-view .blog-grid .sort-select select {
+  padding: 10px;
+  margin-right: 10px;
+}
+#blog-view .blog-grid .pages {
+  position: relative;
+}
+#blog-view .blog-grid .pages p {
+  font-size: 14px;
+  align-items: center;
+  left: 30px;
+  position: absolute;
+  top: 20%;
+}
+#blog-view .blog-grid .pages nav {
+  min-height: 0;
+  position: absolute;
+  right: 0;
+}
+#blog-view .blog-grid .pages nav ul li {
+  border: 1px solid #555555;
+}
+#blog-view .blog-grid .pages nav ul li:hover {
+  border: 1px solid #dddddd;
+}
+#blog-view .blog-grid .pages nav ul li a {
+  color: var(--secondary-color);
+}
+#blog-view .blog-grid .pages nav ul li a:focus {
+  box-shadow: none;
+  border: 1px solid #dddddd;
+}
+#blog-view .blog-grid .pages nav ul li a:hover {
+  border: 1px solid #dddddd;
+}
+
+#bloglist .blogpost {
+  padding-bottom: 50px;
+  width: 700px;
+}
+#bloglist .blogpost .blog-single-post {
+  padding-bottom: 50px;
+  margin-bottom: 150px;
+}
+#bloglist .blogpost .blog-single-post .blogpost-img {
+  width: 100%;
+  position: relative;
+  padding: 20px 0;
+}
+#bloglist .blogpost .blog-single-post .blogpost-img img {
+  width: 700px;
+}
+#bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant {
+  position: absolute;
+  top: 60%;
+  left: 7%;
+  width: 600px;
+  background-color: #f1f1f1;
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 30px 35px;
+}
+#bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant h4 {
+  padding-top: 50px;
+  font-size: 18px;
+  color: var(--secondary-color);
+  font-weight: 400;
+  text-align: left;
+}
+#bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant .blogpost-social-icon {
+  text-align: left;
+  margin-bottom: 20px;
+}
+#bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant .blogpost-social-icon a {
+  font-size: 12px;
+  color: var(--secondary-color);
+  padding: 15px 0;
+}
+#bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant .blogpost-social-icon a i {
+  padding: 0 5px;
+}
+#bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant .blogpost-details {
+  font-size: 14px;
+  color: var(--secondary-color);
+  text-align: left;
+  line-height: 180%;
+}
+#bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant .read-more {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid var(--secondary-color);
+  width: 130px;
+  display: inline-block;
+  text-align: center;
+  color: var(--secondary-color);
+}
+#bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant .read-more:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+#bloglist .post-filter {
+  padding: 0 30px;
+}
+#bloglist .post-filter ul {
+  padding-bottom: 20px;
+}
+#bloglist .post-filter ul li {
+  display: inline-block;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+#bloglist .post-filter ul li:hover {
+  color: var(--primary-color);
+}
+#bloglist .post-filter ul li button {
+  font-size: 18px;
+  color: var(--secondary-color);
+  border: none;
+  background-color: white;
+}
+#bloglist .post-filter .post-filter-content a img {
+  margin-right: 5px;
+}
+#bloglist .post-filter .post-filter-content .post-filter-details h6 {
+  font-size: 14px !important;
+  color: var(--secondary-color);
+  font-weight: 400;
+  margin: 0;
+}
+#bloglist .post-filter .post-filter-content .post-filter-details p {
+  font-size: 14px;
+  color: var(--secondary-color);
+  margin: 0 !important;
+  text-align: left;
+  padding-bottom: 15px;
+}
+#bloglist .post-filter .post-filter-content .post-filter-details i {
+  color: var(--secondary-color);
+  font-size: 11px;
+  transition: all 0.3s linear;
+  display: inline-block;
+}
+#bloglist .post-filter .post-filter-content .post-filter-details a {
+  color: var(--secondary-color);
+  font-size: 11px;
+  transition: all 0.3s linear;
+  display: inline-block;
+  padding-right: 3px;
+}
+#bloglist .post-filter .post-filter-content .post-filter-details a:hover * {
+  color: var(--primary-color);
+}
+#bloglist .blog-button {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#bloglist .blog-button a {
+  background-color: var(--primary-color);
+  display: block;
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 0;
+  transition: 0.3s all linear;
+}
+#bloglist .blog-button a:hover {
+  background-color: #f1f1f1;
+}
+
 #backToTop {
   position: fixed;
   bottom: 30px;
