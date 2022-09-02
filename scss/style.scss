@@ -686,8 +686,6 @@ form button {
 
 //blog post starts here
 #bloglist{
-   
-   
   .blogpost{
     padding-bottom: 50px;
      
@@ -761,12 +759,17 @@ form button {
         li{
           display: inline-block;
           margin-right: 20px;
-          a{
+          .mixitup-control-active{
+            color: var(--primary-color);
+          }
+          button{
             color: var(--secondary-color);
             font-size: 18px;
             transition: 0.3s all linear;
+            border: none;
+            background-color: white;
           }
-          &:hover a{
+          &:hover button{
             color: var(--primary-color);
           }
         }
@@ -776,8 +779,10 @@ form button {
       
       .fltr-post-contant{
         padding: 40px 0;
+        &:nth-child(1){
+          border-bottom: 1px solid var(--secondary-color);
+        }
         &:nth-child(2){
-          border-top: 1px solid var(--secondary-color);
           border-bottom: 1px solid var(--secondary-color);
         }
         &:hover .fltr-post-info h6{
@@ -881,9 +886,88 @@ form button {
       
       }
     }
+    .tag-list{
+      
+      .widget-title{
+        padding: 30px 0;
+        h5{
+          color: var(--secondary-color);
+          text-align: left;
+          font-size: 18px;
+          font-weight: 400;
+          padding: 30px 0;
+        }
+        .tag-btn{
+          a{
+            font-size: 13px;
+            color: var(--secondary-color);
+            transition: 0.3s all linear;
+            display: inline-block;
+            border: 1px solid var(--secondary-color);
+            padding: 10px 5px;
+            margin-bottom: 7px;
+            &:hover{
+              color: var(--primary-color);
+              border: 1px solid var(--primary-color);
+            }
+          }
+        }
+      }
+    }
+    .video-part{
+      background-image: url(../image/blog-video.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+    }
+    .row {
+      height: 100%;
+      button {
+        position: relative;
+        z-index: 10;
+        border: none;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        background-color: #ff3d3d;
+        border-radius: 50%;
+      }
+    }
+    .modal {
+      transition: all 0.5s linear;
+      margin-top: -50px;
+      z-index: 9999;
+      
+      .modal-content{
+        top: 150px;
+      }
+      .video-play {
+        height: 60vh;
+        
+         
+        iframe {
+          height: 100%;
+          width: 100%;
+        
+        }
+      }
+  
+    }
+    }
   }
   
-
   .blog-button{
     text-align: center;
     margin-bottom: 50px;
@@ -900,7 +984,8 @@ form button {
       background-color: #f1f1f1;
     }
   }
-}
+  }
+  
 }
 
 

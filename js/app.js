@@ -336,7 +336,9 @@ $(document).ready(function(){
 
   //post filter starts here
   
-  
+  $(function(){
+    var mixer = mixitup('.filtered-post');
+  })
 
 
 

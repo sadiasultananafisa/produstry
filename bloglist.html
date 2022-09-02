@@ -240,15 +240,20 @@
 
         <!--blog list mix it up starts here -->
          <div class="postfilter col-sm-4">
+
+          <!--mix it upbutton starts here-->
            <div class="filter-btn">
               <ul>
-                <li><a href="#" data-filter="Popular">Popular</a></li>
-                <li><a href="#" data-filter="Recent">Recent</a></li>
-                <li><a href="#" data-filter="Latest">Latest</a></li>
+                <li><button type="button" data-filter="all" class="mixitup-control-active">Popular</button></li>
+                <li><button type="button" data-filter=".Recent">Recent</button></li>
+                <li><button type="button" data-filter=".Latest">Latest</button></li>
               </ul>
            </div>
-           <div class="filtered-post">
-              <div class="fltr-post-contant row align-content-between">
+           <!--mix it up button ends here-->
+
+           <!--filtered post starts here-->
+           <div class=" filtered-post ">
+              <div class="mix Latest fltr-post-contant row align-content-between">
                 <div class="fltr-post-img col-3">
                    <a href="#">
                      <img src="./image/postfilter1.jpg" alt="">
@@ -263,7 +268,7 @@
                   </div>
                 </div>
               </div>
-              <div class="fltr-post-contant row align-content-between">
+              <div class="mix Recent fltr-post-contant row align-content-between">
                 <div class="fltr-post-img col-3">
                    <a href="#">
                      <img src="./image/postfilter1.jpg" alt="">
@@ -278,7 +283,7 @@
                   </div>
                 </div>
               </div>
-              <div class="fltr-post-contant row align-content-between">
+              <div class="mix Latest Recent fltr-post-contant row align-content-between">
                 <div class="fltr-post-img col-3">
                    <a href="#">
                      <img src="./image/postfilter1.jpg" alt="">
@@ -294,8 +299,10 @@
                 </div>
               </div>
            </div>
+           <!--filteredpost ends here-->
+
            <!--blog filter catagories starts here-->
-           <div class="fltr-catagories">
+           <div class="mix fltr-catagories">
               <h5>CATAGORIES</h5>
               <ul>
                 <li>
@@ -343,9 +350,50 @@
               </ul>
             </div>
             <!--blog filter catagories ends here-->
+
+            <!--tag list starts here-->
+            <div class="mix tag-list">
+              <div class="widget-title text-uppercase ">
+                <h5>tags</h5>
+                <div class="tag-btn">
+                  <a href="#">Industry</a>
+                  <a href="#">Construction</a>
+                  <a href="#">Building</a>
+                  <a href="#">Company</a>
+                  <a href="#">Architect</a>
+                  <a href="#">Architecture</a>
+                  <a href="#">Builders</a>
+                  <a href="#">Contruct</a>
+                </div>
+              </div>
+            </div>
+            <!--tag list ends here-->
+
+            <!--video starts here-->
+            <div class="video-part">
+              <div class="row align-items-center">
+                <div class="col-md-12 text-center">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Video title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body video-play">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Re-lJ5K7X_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--video ends here-->
          </div>
-
-
         <!--blog list mix it up ends here -->
       </div>
     </div>

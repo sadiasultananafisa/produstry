@@ -750,19 +750,26 @@ a .nrml-button:hover {
   display: inline-block;
   margin-right: 20px;
 }
-#bloglist .postfilter .filter-btn ul li a {
+#bloglist .postfilter .filter-btn ul li .mixitup-control-active {
+  color: var(--primary-color);
+}
+#bloglist .postfilter .filter-btn ul li button {
   color: var(--secondary-color);
   font-size: 18px;
   transition: 0.3s all linear;
+  border: none;
+  background-color: white;
 }
-#bloglist .postfilter .filter-btn ul li:hover a {
+#bloglist .postfilter .filter-btn ul li:hover button {
   color: var(--primary-color);
 }
 #bloglist .postfilter .filtered-post .fltr-post-contant {
   padding: 40px 0;
 }
+#bloglist .postfilter .filtered-post .fltr-post-contant:nth-child(1) {
+  border-bottom: 1px solid var(--secondary-color);
+}
 #bloglist .postfilter .filtered-post .fltr-post-contant:nth-child(2) {
-  border-top: 1px solid var(--secondary-color);
   border-bottom: 1px solid var(--secondary-color);
 }
 #bloglist .postfilter .filtered-post .fltr-post-contant:hover .fltr-post-info h6 {
@@ -850,6 +857,76 @@ a .nrml-button:hover {
 }
 #bloglist .postfilter .fltr-catagories ul li:hover a {
   color: var(--primary-color);
+}
+#bloglist .postfilter .tag-list .widget-title {
+  padding: 30px 0;
+}
+#bloglist .postfilter .tag-list .widget-title h5 {
+  color: var(--secondary-color);
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 30px 0;
+}
+#bloglist .postfilter .tag-list .widget-title .tag-btn a {
+  font-size: 13px;
+  color: var(--secondary-color);
+  transition: 0.3s all linear;
+  display: inline-block;
+  border: 1px solid var(--secondary-color);
+  padding: 10px 5px;
+  margin-bottom: 7px;
+}
+#bloglist .postfilter .tag-list .widget-title .tag-btn a:hover {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+#bloglist .postfilter .video-part {
+  background-image: url(../image/blog-video.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+#bloglist .postfilter .video-part::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+#bloglist .postfilter .video-part .row {
+  height: 100%;
+}
+#bloglist .postfilter .video-part .row button {
+  position: relative;
+  z-index: 10;
+  border: none;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  background-color: #ff3d3d;
+  border-radius: 50%;
+}
+#bloglist .postfilter .video-part .modal {
+  transition: all 0.5s linear;
+  margin-top: -50px;
+  z-index: 9999;
+}
+#bloglist .postfilter .video-part .modal .modal-content {
+  top: 150px;
+}
+#bloglist .postfilter .video-part .modal .video-play {
+  height: 60vh;
+}
+#bloglist .postfilter .video-part .modal .video-play iframe {
+  height: 100%;
+  width: 100%;
 }
 #bloglist .blog-button {
   text-align: center;
