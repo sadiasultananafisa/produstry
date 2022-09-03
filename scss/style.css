@@ -1039,6 +1039,22 @@ a .nrml-button:hover {
   visibility: visible;
   opacity: 1;
 }
+#bloggrid-view .blog-button {
+  text-align: center;
+  margin: 50px 0;
+}
+#bloggrid-view .blog-button a {
+  background-color: var(--primary-color);
+  display: block;
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 0;
+  transition: 0.3s all linear;
+}
+#bloggrid-view .blog-button a:hover {
+  background-color: #f1f1f1;
+}
 
 #backToTop {
   position: fixed;

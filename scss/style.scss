@@ -1082,6 +1082,24 @@ form button {
         }
       }
     }
+    
+  }
+  .blog-button{
+    text-align: center;
+    margin: 50px 0;
+    a{
+      background-color: var(--primary-color);
+      display: block;
+      color: var(--secondary-color);
+      font-size: 16px;
+      font-weight: 500;
+      padding: 15px 0;
+      transition: .3s all linear;
+      &:hover{
+      
+      background-color: #f1f1f1;
+    }
+  }
   }
 }
 
