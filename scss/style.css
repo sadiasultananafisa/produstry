@@ -75,7 +75,8 @@ a .nrml-button:hover {
   position: relative;
 }
 .about-us-banner .about-bnr-img {
-  min-height: 300px;
+  min-height: 250px;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -85,7 +86,7 @@ a .nrml-button:hover {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 1;
@@ -327,6 +328,7 @@ a .nrml-button:hover {
   background-color: #f1f1f1;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 76%);
           clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 76%);
+  text-align: -webkit-center;
 }
 #our-team .team .team-info {
   background-color: var(--secondary-color);
@@ -411,22 +413,25 @@ a .nrml-button:hover {
   margin: 50px 0;
   text-align: center;
 }
-#portfolio .port-img {
+#portfolio .row {
+  justify-content: space-between;
+}
+#portfolio .row .port-img {
   position: relative;
   padding: 0;
   padding-top: 30px;
   text-align: center;
-  width: 265px;
+  width: 250px;
 }
-#portfolio .port-img:hover .port-content {
+#portfolio .row .port-img:hover .port-content {
   opacity: 1;
   height: 40%;
 }
-#portfolio .port-img img {
-  width: 265px;
-  height: 335px;
+#portfolio .row .port-img img {
+  width: 100%;
+  min-height: 350px;
 }
-#portfolio .port-img .port-content {
+#portfolio .row .port-img .port-content {
   background-color: var(--primary-color);
   position: absolute;
   z-index: 999;
@@ -441,12 +446,12 @@ a .nrml-button:hover {
   -webkit-clip-path: polygon(0% 47%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 47%, 100% 0%, 100% 100%, 0% 100%);
 }
-#portfolio .port-img .port-content h4 {
+#portfolio .row .port-img .port-content h4 {
   color: black;
   font-size: 18px;
   text-align: center;
 }
-#portfolio .port-img .port-content p {
+#portfolio .row .port-img .port-content p {
   color: #555555;
   font-size: 14px;
 }
@@ -659,12 +664,9 @@ a .nrml-button:hover {
 #blog-view .blog-grid .sort-select {
   font-size: 14px;
 }
-#blog-view .blog-grid .sort-select span {
-  padding: 0 3px;
-}
 #blog-view .blog-grid .sort-select select {
   padding: 10px;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 #blog-view .blog-grid .pages {
   position: relative;
@@ -672,14 +674,15 @@ a .nrml-button:hover {
 #blog-view .blog-grid .pages p {
   font-size: 14px;
   align-items: center;
-  left: 30px;
+  left: 5%;
   position: absolute;
+  padding-right: 200px;
   top: 20%;
 }
 #blog-view .blog-grid .pages nav {
   min-height: 0;
+  left: 20%;
   position: absolute;
-  right: 0;
 }
 #blog-view .blog-grid .pages nav ul li {
   border: 1px solid #555555;
@@ -702,29 +705,25 @@ a .nrml-button:hover {
 /*blog post starts here*/
 #bloglist .blogpost {
   padding-bottom: 50px;
+  padding-top: 25px;
 }
 #bloglist .blogpost .blog-single-post {
-  padding-bottom: 50px;
   margin-bottom: 150px;
 }
 #bloglist .blogpost .blog-single-post .blogpost-img {
-  width: 100%;
   position: relative;
-  padding: 20px 0;
-}
-#bloglist .blogpost .blog-single-post .blogpost-img img {
-  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant {
   position: absolute;
-  top: 60%;
-  left: 6%;
-  width: 650px;
+  top: 50%;
   background-color: #f1f1f1;
   -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
   padding: 30px 35px;
-  margin: 0 30px;
+  margin: 0 30px !important;
 }
 #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant h4 {
   padding-top: 50px;
@@ -735,11 +734,11 @@ a .nrml-button:hover {
 }
 #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant .blogpost-social-icon {
   text-align: left;
-  margin-bottom: 20px;
+  margin: 10px 0 15px 0;
 }
 #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant .blogpost-social-icon a {
-  font-size: 12px;
-  color: var(--secondary-color);
+  font-size: 14px;
+  color: rgba(78, 73, 73, 0.993);
   padding: 15px 0;
 }
 #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant .blogpost-social-icon a i {
@@ -825,20 +824,13 @@ a .nrml-button:hover {
 }
 #bloglist .postfilter .filtered-post .fltr-post-info {
   margin-left: 20px;
-  position: relative;
+  font-size: 12px;
 }
 #bloglist .postfilter .filtered-post .fltr-post-info h6 {
-  position: absolute;
-  top: 0;
-  left: 0;
+  padding-bottom: 25px;
   color: var(--secondary-color);
   font-size: 14px;
   transition: 0.3s all linear;
-}
-#bloglist .postfilter .filtered-post .fltr-post-info .fltr-post-icon {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 #bloglist .postfilter .filtered-post .fltr-post-info .fltr-post-icon a {
   font-size: 13px;
@@ -956,29 +948,23 @@ a .nrml-button:hover {
 /*blog post ends here*/
 /*blog grid view*/
 #bloggrid-view {
-  margin: 100px 0;
+  margin-top: 100px;
 }
 #bloggrid-view .bloggrid {
   padding-bottom: 250px;
 }
+#bloggrid-view .bloggrid .row {
+  justify-content: space-between;
+}
 #bloggrid-view .bloggrid .row .bloggrid-contant {
-  width: 360px;
+  max-width: 350px;
   position: relative;
   text-align: center;
   padding: 0 !important;
-}
-#bloggrid-view .bloggrid .row .bloggrid-contant:nth-child(1) {
-  margin-bottom: 300px;
-}
-#bloggrid-view .bloggrid .row .bloggrid-contant:nth-child(2) {
-  margin-bottom: 300px;
-}
-#bloggrid-view .bloggrid .row .bloggrid-contant:nth-child(3) {
-  margin-bottom: 300px;
+  margin-bottom: 350px;
 }
 #bloggrid-view .bloggrid .row .bloggrid-contant .bloggrid-img img {
   width: 100% !important;
-  padding: 0 !important;
 }
 #bloggrid-view .bloggrid .row .bloggrid-contant .bloggrid-img .bloggrid-img-icon {
   position: absolute;
@@ -999,10 +985,10 @@ a .nrml-button:hover {
   color: var(--primary-color);
 }
 #bloggrid-view .bloggrid .row .bloggrid-contant .bloggrid-info {
-  border: 1px solid rgba(117, 115, 115, 0.2862745098);
+  border: 2px solid rgba(117, 115, 115, 0.2862745098);
   background-color: white;
   position: absolute;
-  top: 0;
+  bottom: 10%;
   left: 0;
   -webkit-clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
@@ -1041,7 +1027,8 @@ a .nrml-button:hover {
 }
 #bloggrid-view .blog-button {
   text-align: center;
-  margin: 50px 0;
+  margin-top: -200px;
+  padding-bottom: 10px;
 }
 #bloggrid-view .blog-button a {
   background-color: var(--primary-color);

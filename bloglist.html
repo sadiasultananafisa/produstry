@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./scss/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./scss/responsive.css">
 </head>
 <body>
   <div class="preloader">
@@ -113,11 +114,11 @@
   <section id="blog-view">
     <div class="container">
       <div class="row blog-grid align-content-between">
-        <div class="col-md-4 col-sm-2 sort-icon">
+        <div class="col-md-3 col-sm-3 sort-icon col-12">
           <a href="bloggrid.html"><span><i class="fa-solid fa-grip"></i></span></a>
           <a href="bloglist.html"><span><i class="fa-solid fa-list"></i></span></a>
         </div>
-          <div class="col-md-4 col-sm-5 midle_col sort-select"> 
+          <div class=" col-md-5 col-sm-9 sort-select col-12"> 
             <span>Sort by :</span>
               <select name="" id="">
                 <option value="">Name</option>
@@ -131,8 +132,8 @@
                 <option value="">12</option>
               </select> 
           </div>
-          <div class="pages col-md-4 col-sm-5 d-flex align-content-center">
-            <p>Pages :</p>
+          <div class="pages col-md-4 d-flex align-content-center">
+            <span><p>Pages :</p></span>
             <nav aria-label="Page navigation example">
               <ul class="pagination">
                 <li class="page-item">
@@ -146,6 +147,10 @@
                 <li class="page-item"><a class="page-link" href="#">4</a></li>
                 <li class="page-item"><a class="page-link" href="#">5</a></li>
                 <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item d-sm-none"><a class="page-link" href="#">7</a></li>
+                <li class="page-item d-sm-none"><a class="page-link" href="#">8</a></li>
+                <li class="page-item d-sm-none"><a class="page-link" href="#">9</a></li>
+                <li class="page-item d-sm-none"><a class="page-link" href="#">10</a></li>
                 <li class="page-item">
                   <a class="page-link" href="#" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
@@ -156,84 +161,71 @@
           </div>  
       </div>
   </section>
+
+  
   <!--blog list-->
   <section id="bloglist">
     <div class="container">
       <div class="row align-content-between">
         <!--blog posts starts here-->
         <div class="blogpost col-sm-8">
-        <div class="blog-single-post">
-          <div class="blogpost-img">
-            <img src="./image/bloglist1.jpg" alt="">
-            <div class="bloglist-contant mx-0">
-              <h4>Finding New Buildings in the Dust of the Old Never Seen Before</h4>
-              <div class="row justify-content-between">
-                  <div class="blogpost-social-icon col-lg-6">
-                    <a href="#"><i class="fa-solid fa-user"></i>By: Admin</a>
-                  </div>
-                  <div class="blogpost-social-icon col-lg-6">
-                    <a href="#"><i class="fa-solid fa-thumbs-up"></i>2.5k Likes</a>
-                    <a href="#"><i class="fa-solid fa-comments"></i>1.5k Comments</a>
-                  </div>
-              </div>
-              <p class="blogpost-details mx-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          <div class="blog-single-post">
+            <div class="blogpost-img"  style="background-image: url(./image/bloglist1.jpg);">
+              <div class="bloglist-contant mx-0 ">
+                <h4>Finding New Buildings in the Dust of the Old Never Seen Before</h4>
+                <div class="blogpost-social-icon">
+                  <a href="#"><i class="fa-solid fa-user"></i>By: Admin</a>
+                  <a href="#"><i class="fa-solid fa-thumbs-up"></i>2.5k Likes</a>
+                  <a href="#"><i class="fa-solid fa-comments"></i>1.5k Comments</a>
+                </div>
+                <p class="blogpost-details mx-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsumas been the duy's standard dummy text ever since the 1500s, when an unknown printer took
                   a galley of type and scrabled it to make a type specimen book. It has survived not only five centuries,
                   but also the leap into electronicting. 
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry<BR>
-              </p>
-              <a href="#" class="read-more">READ MORE</a>
+                </p>
+                <a href="#" class="read-more">READ MORE</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="blog-single-post">
-          <div class="blogpost-img">
-            <img src="./image/bloglist2.jpg" alt="">
-            <div class="bloglist-contant mx-0">
-              <h4>Finding New Buildings in the Dust of the Old Never Seen Before</h4>
-              <div class="row justify-content-between">
-                  <div class="blogpost-social-icon col-lg-6">
-                    <a href="#"><i class="fa-solid fa-user"></i>By: Admin</a>
-                  </div>
-                  <div class="blogpost-social-icon col-lg-6">
-                    <a href="#"><i class="fa-solid fa-thumbs-up"></i>2.5k Likes</a>
-                    <a href="#"><i class="fa-solid fa-comments"></i>1.5k Comments</a>
-                  </div>
-              </div>
-              <p class="blogpost-details mx-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          <div class="blog-single-post">
+            <div class="blogpost-img"  style="background-image: url(./image/bloglist2.jpg);">
+              <div class="bloglist-contant mx-0 ">
+                <h4>Finding New Buildings in the Dust of the Old Never Seen Before</h4>
+                <div class="blogpost-social-icon">
+                  <a href="#"><i class="fa-solid fa-user"></i>By: Admin</a>
+                  <a href="#"><i class="fa-solid fa-thumbs-up"></i>2.5k Likes</a>
+                  <a href="#"><i class="fa-solid fa-comments"></i>1.5k Comments</a>
+                </div>
+                <p class="blogpost-details mx-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsumas been the duy's standard dummy text ever since the 1500s, when an unknown printer took
                   a galley of type and scrabled it to make a type specimen book. It has survived not only five centuries,
                   but also the leap into electronicting. 
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry<BR>
-              </p>
-              <a href="#" class="read-more">READ MORE</a>
+                </p>
+                <a href="#" class="read-more">READ MORE</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="blog-single-post">
-          <div class="blogpost-img">
-            <img src="./image/bloglist3.jpg" alt="">
-            <div class="bloglist-contant mx-0">
-              <h4>Finding New Buildings in the Dust of the Old Never Seen Before</h4>
-              <div class="row justify-content-between">
-                  <div class="blogpost-social-icon col-lg-6">
-                    <a href="#"><i class="fa-solid fa-user"></i>By: Admin</a>
-                  </div>
-                  <div class="blogpost-social-icon col-lg-6">
-                    <a href="#"><i class="fa-solid fa-thumbs-up"></i>2.5k Likes</a>
-                    <a href="#"><i class="fa-solid fa-comments"></i>1.5k Comments</a>
-                  </div>
-              </div>
-              <p class="blogpost-details mx-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          <div class="blog-single-post">
+            <div class="blogpost-img"  style="background-image: url(./image/bloglist3.jpg);">
+              <div class="bloglist-contant mx-0 ">
+                <h4>Finding New Buildings in the Dust of the Old Never Seen Before</h4>
+                <div class="blogpost-social-icon">
+                  <a href="#"><i class="fa-solid fa-user"></i>By: Admin</a>
+                  <a href="#"><i class="fa-solid fa-thumbs-up"></i>2.5k Likes</a>
+                  <a href="#"><i class="fa-solid fa-comments"></i>1.5k Comments</a>
+                </div>
+                <p class="blogpost-details mx-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsumas been the duy's standard dummy text ever since the 1500s, when an unknown printer took
                   a galley of type and scrabled it to make a type specimen book. It has survived not only five centuries,
                   but also the leap into electronicting. 
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry<BR>
-              </p>
-              <a href="#" class="read-more">READ MORE</a>
+                </p>
+                <a href="#" class="read-more">READ MORE</a>
+              </div>
             </div>
           </div>
-        </div>
         </div>
         <!--blog posts ends here-->
         <!--blog list mix it up starts here -->
@@ -250,47 +242,47 @@
            <!--filtered post starts here-->
            <div class=" filtered-post ">
               <div class="mix Latest fltr-post-contant row align-content-between">
-                <div class="fltr-post-img col-3">
+                <div class="fltr-post-img col-sm-3">
                    <a href="#">
                      <img src="./image/postfilter1.jpg" alt="">
                      <span><i class="fa-solid fa-link"></i></span>
                    </a>
                 </div>
-                <div class="fltr-post-info col-8">
-                  <a href="#"><h6>Best Contructory Ever, you will be <br>Apriciate</h6></a>
+                <div class="fltr-post-info col-sm-8 d-none d-sm-block">
+                  <a href="#"><h6>Best Contructory Ever, you will be Apriciate</h6></a>
                   <div class="fltr-post-icon">
                     <span><a href=""><i class="fa fa-thumbs-up"></i><span> 2.5k likes</span></a></span>
-                    <span> <a href=""><i class="fa fa-comments"></i><span> 1.5k Comments</span></a></span>
+                    <span class="d-none d-sm-inline-block"> <a href=""><i class="fa fa-comments"></i><span> 1.5k Comments</span></a></span>
                   </div>
                 </div>
               </div>
               <div class="mix Recent fltr-post-contant row align-content-between">
-                <div class="fltr-post-img col-3">
+                <div class="fltr-post-img col-sm-3">
                    <a href="#">
                      <img src="./image/postfilter1.jpg" alt="">
                      <span><i class="fa-solid fa-link"></i></span>
                    </a>
                 </div>
-                <div class="fltr-post-info col-8">
-                  <a href="#"><h6>Best Contructory Ever, you will be <br>Apriciate</h6></a>
+                <div class="fltr-post-info col-sm-8 d-none d-sm-block">
+                  <a href="#"><h6>Best Contructory Ever, you will be Apriciate</h6></a>
                   <div class="fltr-post-icon">
                     <span><a href=""><i class="fa fa-thumbs-up"></i><span> 2.5k likes</span></a></span>
-                    <span> <a href=""><i class="fa fa-comments"></i><span> 1.5k Comments</span></a></span>
+                    <span class="d-none d-sm-inline-block"> <a href=""><i class="fa fa-comments"></i><span> 1.5k Comments</span></a></span>
                   </div>
                 </div>
               </div>
               <div class="mix Latest Recent fltr-post-contant row align-content-between">
-                <div class="fltr-post-img col-3">
+                <div class="fltr-post-img col-sm-3">
                    <a href="#">
                      <img src="./image/postfilter1.jpg" alt="">
                      <span><i class="fa-solid fa-link"></i></span>
                    </a>
                 </div>
-                <div class="fltr-post-info col-8">
-                  <a href="#"><h6>Best Contructory Ever, you will be <br>Apriciate</h6></a>
+                <div class="fltr-post-info col-sm-8 d-none d-sm-block">
+                  <a href="#"><h6>Best Contructory Ever, you will be Apriciate</h6></a>
                   <div class="fltr-post-icon">
-                    <span><a href=""><i class="fa fa-thumbs-up"></i><span> 2.5k likes</span></a></span>
-                    <span> <a href=""><i class="fa fa-comments"></i><span> 1.5k Comments</span></a></span>
+                    <span ><a href=""><i class="fa fa-thumbs-up"></i><span> 2.5k likes</span></a></span>
+                    <span class="d-none d-sm-inline-block"> <a href=""><i class="fa fa-comments"></i><span> 1.5k Comments</span></a></span>
                   </div>
                 </div>
               </div>
@@ -330,13 +322,13 @@
                     <a href="#"  class="col-1">53</a>
                   </div>
                 </li>
-                <li>
+                <li class="d-none d-md-block">
                   <div class="ctagories row">
                     <a href="#" class="col-11">Builders</a>
                     <a href="#"  class="col-1">63</a>
                   </div>
                 </li>
-                <li>
+                <li class="d-none d-md-block">
                   <div class="ctagories row">
                     <a href="#" class="col-11">Building</a>
                     <a href="#"  class="col-1">73</a>
@@ -346,7 +338,7 @@
             </div>
             <!--blog filter catagories ends here-->
             <!--tag list starts here-->
-            <div class="mix tag-list">
+            <div class="mix tag-list d-none d-sm-block">
               <div class="widget-title text-uppercase ">
                 <h5>tags</h5>
                 <div class="tag-btn">
@@ -355,15 +347,15 @@
                   <a href="#">Building</a>
                   <a href="#">Company</a>
                   <a href="#">Architect</a>
-                  <a href="#">Architecture</a>
-                  <a href="#">Builders</a>
-                  <a href="#">Contruct</a>
+                  <a href="#" class="d-none d-md-inline-block">Architecture</a>
+                  <a href="#" class="d-none d-md-inline-block">Builders</a>
+                  <a href="#" class="d-none d-md-inline-block">Contruct</a>
                 </div>
               </div>
             </div>
             <!--tag list ends here-->
             <!--video starts here-->
-            <div class="video-part">
+            <div class="video-part d-none d-md-block">
               <div class="row align-items-center">
                 <div class="col-md-12 text-center">
                   <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">

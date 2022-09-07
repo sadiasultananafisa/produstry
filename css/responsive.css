@@ -4,9 +4,9 @@
         padding: 10px 0;
         font-size: 12px;
     }
-    .welcome{
-        clip-path: none;
-        padding: 5px ;
+    .welcome p{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+        padding: 10px ;
         font-size: 12px;
     }
     .header-icon{

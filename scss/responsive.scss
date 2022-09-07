@@ -1,0 +1,398 @@
+/*banner starts here*/
+@media (min-width:332px) and (max-width:571px){
+    #about-us-banner{
+        display: none;
+    }
+}
+@media (min-width:572px) and (max-width:991px){
+    .about-us-banner .about-us-bnr-item {
+        left: 38%;
+    }
+    .about-us-banner .about-bnr-img {
+        min-height: 220px;
+    }
+}
+/*banner starts here*/
+
+
+/*ABOUT US PAGE STARTS HERE*/
+@media (min-width:768px) and (max-width:991px){
+    #about-produstry{
+        .about-produstry{
+            .row{
+                .about-produstry-img{
+                    img{
+                        display: none;
+                    }
+                }
+                .about-produstry-content{
+                        padding: 0 80px 0px 10px;
+                    
+                    h2{
+
+                    }
+                    p{
+                        font-size: 12px;
+                        line-height: 130%;
+                    }
+                }
+            }
+        }
+    }
+    #our-mission{
+        .our-mission{
+            .row{
+                .our-mission-content{
+                    padding: 0 20px 0px 50px;
+                    h2{
+
+                    }
+                    p{
+                        font-size: 12px;
+                        line-height: 130%;
+                    }
+                }
+                .our-mission-img{
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:332px) and (max-width:767px){
+    #about-produstry{
+        .about-produstry{
+            margin: 50px 0;
+            .row{
+                .about-produstry-img{
+                    display: none;
+                    img{
+                        display: none;
+                    }
+                }
+                .about-produstry-content{
+                        padding: 0 50px;
+                    
+                    h2{
+                    }
+                    p{
+                        font-size: 12px;
+                        line-height: 130%;
+                    }
+                }
+            }
+        }
+    }
+    #our-mission{
+        .our-mission{
+            margin: 50px 0;
+            .row{
+                .our-mission-content{
+                    padding: 0 20px 0px 50px;
+                    h2{
+
+                    }
+                    p{
+                        font-size: 12px;
+                        line-height: 130%;
+                    }
+                }
+                .our-mission-img{
+                    display: none;
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+/*ABOUT US PAGE endS HERE*/
+
+/*contact us starts here*/
+@media (max-width:767px){
+    #contact-form .contact-form-col {
+        background: none;
+        
+    }
+}
+/*contact us starts here*/
+
+/*portfolio starts here*/
+@media (min-width:1200px) {
+    #portfolio{
+        .row{
+            .port-img:nth-child(9){
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width:991px) {
+    #portfolio{
+        .row{
+            justify-content: space-evenly;
+            .port-img{
+                width: 300px;
+                text-align: center;
+                
+                
+            }
+            .port-img:nth-child(9){
+                display: none;
+            }
+        }
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    #portfolio{
+        .row{
+            justify-content: space-evenly;
+            .port-img{
+                width: 300px;
+                text-align: center;
+            }
+        }
+    }
+}
+/*portfolio starts here*/
+
+/*blog list view starts here*/
+@media (max-width:576px){
+    .pages{
+        display: block;
+    }
+    .pagination {
+        font-size: 11px;
+    }
+    #blog-view .blog-grid .pages nav {
+        right: 25px;
+    }
+    #blog-view .blog-grid .pages p {
+       top: 10px;
+        left: 10px!important;
+       
+    }
+    #blog-view .blog-grid .sort-select {
+        font-size: 14px;
+        margin: 20px 0!important;
+    }
+    #blog-view .blog-grid {
+        border: 0px solid #dddddd;
+        padding: 13px 0;
+        text-align: left;
+    }
+    #bloglist .postfilter .filtered-post .fltr-post-contant .fltr-post-img{
+        text-align: center;
+    }
+    #bloglist .postfilter .filtered-post .fltr-post-contant .fltr-post-img img {
+        width: 100px;
+    }
+    #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant {
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+        top: 0;
+        padding: 10px;
+        margin: -1px!important;
+    }
+    #bloglist .blogpost .blog-single-post .blogpost-img {
+        min-height: 250px;
+    }
+    #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant h4 {
+        padding-top: 10px;
+        font-size: 16px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    #blog-view .blog-grid {
+        border: 1px solid #dddddd;
+        padding: 10px 10px 40px 10px;
+    }
+    #blog-view .blog-grid .sort-select select {
+        
+        margin-right: 5px;
+        font-size: 11px;
+    }
+    .pages{
+        margin: 10px 0;
+    }
+    #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant h4 {
+        font-size: 16px;
+    }
+    #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant .blogpost-details {
+        font-size: 12px;
+        line-height: 140%;
+    }
+    #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant {
+        top: 5%;
+        padding: 15px;
+        margin: -1px!important;
+    }
+    #bloglist .blogpost .blog-single-post .blogpost-img {
+        min-height: 280px;
+    }
+    #bloglist .postfilter .filtered-post .fltr-post-info h6 {
+        font-size: 10px;
+    }
+    #bloglist .postfilter .filtered-post .fltr-post-info h6 {
+        font-size: 10px;
+        padding-bottom: 0px;
+    }
+    #bloglist .postfilter .filtered-post .fltr-post-info .fltr-post-icon span a{
+        font-size: 10px;
+        padding-right: 0px;
+        i{
+            font-size: 11px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    #bloglist .postfilter .filtered-post .fltr-post-info {
+        margin-left: 0px;
+        font-size: 11px;
+        padding: 0 0 0 5px;
+    }
+    #bloglist .postfilter .filter-btn ul li button {
+        font-size: 14px;
+    }
+    #bloglist .postfilter .filter-btn ul li {
+        
+        margin-right: 3px;
+    }
+    
+    .pagination {
+        font-size: 11px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant h4 {
+        font-size: 16px;
+    }
+    #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant .blogpost-details {
+        font-size: 13px;
+        line-height: 150%;
+    }
+    .read-more {
+        margin-top: 10px;
+        padding: 6px;
+    }
+    #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant {
+        padding: 15px 20px;
+   
+    }
+    #bloglist .blogpost .blog-single-post .blogpost-img {
+        min-height: 300px;
+    }
+    #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant {
+        top: 25%;
+        padding: 20px 15px;
+        margin: 0 10px!important;
+    }
+    #blog-view .blog-grid .sort-select {
+        font-size: 11px;
+    }
+    .page-link {
+        padding: 7px!important;
+    }
+    
+    #blog-view .blog-grid .sort-icon {
+        font-size: 14px;
+    }
+    #blog-view .blog-grid .sort-icon a {
+        padding: 7px 10px;
+        border: 0.3px solid #555555;
+    }
+    #blog-view .blog-grid .pages p {
+        font-size: 12px;
+        left: 0px;
+        top: 20%;
+    }
+.pagination {
+   
+    font-size: 12px;
+}
+#bloglist .postfilter .filter-btn ul li button {
+    font-size: 15px;
+}
+#bloglist .postfilter .filtered-post .fltr-post-info h6 {
+    font-size: 10px;
+    padding-bottom: 20px;
+}
+#bloglist .postfilter .filtered-post .fltr-post-info .fltr-post-icon span a{
+    font-size: 10px;
+    padding-right: 0px;
+    i{
+        font-size: 11px;
+        padding: 0;
+        margin: 0;
+    }
+}
+#bloglist .postfilter .filtered-post .fltr-post-info {
+    margin-left: 0px;
+    font-size: 11px;
+    padding: 0 0 0 5px;
+}
+}
+@media (min-width:992) and (max-width:1199px){
+    #bloglist .blogpost .blog-single-post {
+        margin-bottom: 300px;
+    }
+    #bloglist .postfilter .filtered-post .fltr-post-info a {
+        font-size: 10px;
+    }
+    #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant {
+        top: 40%;
+        
+    }
+}
+
+/*blog grid view*/
+@media (min-width:332px) and (max-width:767px){
+    #bloggrid-view .bloggrid .row{
+        justify-content: space-around!important;
+    }
+    #bloggrid-view .bloggrid .row .bloggrid-contant {
+        margin-bottom: 250px;
+    }
+    #bloggrid-view .bloggrid .row .bloggrid-contant .bloggrid-info h4 {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    #bloggrid-view .bloggrid .row .bloggrid-contant {
+        margin-bottom: 250px;
+    }
+    #bloggrid-view .bloggrid .row .bloggrid-contant .bloggrid-info h4 {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    #bloggrid-view .bloggrid .row .bloggrid-contant {
+        width: 300px;
+        margin-bottom: 300px;
+    }
+    #bloggrid-view .bloggrid .row {
+        justify-content: space-between;
+    }
+    #bloggrid-view .bloggrid .row .bloggrid-contant .bloggrid-info h4 {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+    }
+}
+@media (min-width:1200px){
+    #bloggrid-view .bloggrid .row .bloggrid-contant {
+        min-width: 360px;
+        margin:0 5px;
+        margin-bottom: 300px;
+    }
+    #bloggrid-view .bloggrid .row {
+        justify-content: space-around;
+    }
+}
+
