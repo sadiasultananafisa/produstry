@@ -3,6 +3,9 @@
     #about-us-banner{
         display: none;
     }
+    .about-us-banner .about-us-bnr-item {
+        left: 30%;
+    }
 }
 @media (min-width:572px) and (max-width:991px){
     .about-us-banner .about-us-bnr-item {
@@ -112,10 +115,15 @@
 /*ABOUT US PAGE endS HERE*/
 
 /*contact us starts here*/
+
 @media (max-width:767px){
     #contact-form .contact-form-col {
         background: none;
         
+    }
+    #contact-form .contact-form-col .row {
+        left: 7%;
+        top: 5%;
     }
 }
 /*contact us starts here*/
@@ -161,6 +169,22 @@
 
 /*blog list view starts here*/
 @media (max-width:576px){
+    #bloglist .postfilter .filtered-post .fltr-post-contant {
+        padding: 20px 0;
+    }
+    #bloglist .postfilter .filtered-post .fltr-post-info h6 {
+        font-size: 18px;
+    }
+    #bloglist .postfilter {
+        padding: 0 30px;
+    }
+    #bloglist .blogpost {
+        padding-bottom: 10px;
+        
+    }
+    #bloglist .blogpost .blog-single-post {
+        margin-bottom: 80px;
+    }
     .pages{
         display: block;
     }
@@ -184,11 +208,9 @@
         padding: 13px 0;
         text-align: left;
     }
-    #bloglist .postfilter .filtered-post .fltr-post-contant .fltr-post-img{
-        text-align: center;
-    }
+    
     #bloglist .postfilter .filtered-post .fltr-post-contant .fltr-post-img img {
-        width: 100px;
+        width:100%;
     }
     #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant {
         clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -264,6 +286,16 @@
     .pagination {
         font-size: 11px;
     }
+    #bloglist .postfilter .filtered-post .fltr-post-contant .fltr-post-img span i {
+    
+        top: 25%;
+        left: 22%;
+        font-size: 9px;
+        min-height: 7px;
+        min-width: 7px;
+        
+        line-height: 7px;
+    }
 }
 @media (min-width:768px) and (max-width:991px){
     #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant h4 {
@@ -333,6 +365,16 @@
     font-size: 11px;
     padding: 0 0 0 5px;
 }
+#bloglist .postfilter .filtered-post .fltr-post-contant .fltr-post-img span i {
+    
+    top: 28%;
+    left: 25%;
+    font-size: 9px;
+    min-height: 9px;
+    min-width: 9px;
+    
+    line-height: 9px;
+}
 }
 @media (min-width:992) and (max-width:1199px){
     #bloglist .blogpost .blog-single-post {
@@ -345,8 +387,17 @@
         top: 40%;
         
     }
+    #bloglist .postfilter .filtered-post .fltr-post-contant .fltr-post-img span i {
+        
+        left: 30%;
+        font-size: 12px;
+        min-height: 15px;
+        min-width: 15px;
+        
+        line-height: 15px;
+        
+    }
 }
-
 /*blog grid view*/
 @media (min-width:332px) and (max-width:767px){
     #bloggrid-view .bloggrid .row{

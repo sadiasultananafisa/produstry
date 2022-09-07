@@ -219,6 +219,14 @@
     } 
     
   }
+  .navbar-toggler {
+    padding: 10px 10px 5px 10px;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 .05rem;
+}
   /*NAV ends here*/
   /*BANNAR starts here*/
   .slide-banner{

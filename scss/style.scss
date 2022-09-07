@@ -801,7 +801,6 @@ form button {
         }
         .fltr-post-img{
           position: relative;
-          
           padding: 0!important;
           &:hover span{
             width: 100%;
@@ -809,6 +808,7 @@ form button {
           }
           img{
             width: 100%;
+            height: 100%;
             
           }
           span{
@@ -825,12 +825,14 @@ form button {
                 align-items: center;
                 position: absolute;
                 top: 35%;
-                left: 35%;
+                left: 30%;
                 font-size: 15px;
+                min-height: 20px;
+                min-width: 20px;
                 border-radius: 50%;
                 background-color: white;
                 padding: 10px;
-                line-height: 100%;
+                line-height: 20px;
                 color: red;
               }
           }
@@ -840,6 +842,7 @@ form button {
       .fltr-post-info{
         margin-left: 20px;
         font-size: 12px;
+        position: relative;
         h6{
           padding-bottom: 25px;
           color: var(--secondary-color);
@@ -847,11 +850,13 @@ form button {
           transition: 0.3s all linear;
         }
           .fltr-post-icon{
-            
+            position: absolute;
+              bottom: 0;
             a{
               font-size: 13px;
               color: var(--secondary-color);
               padding-right: 6px;
+              
               &:hover{
                 color: var(--primary-color);
               }

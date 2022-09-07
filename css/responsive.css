@@ -92,6 +92,36 @@
     }
 }
 /*ABOUT US ends here*/
+
+/*nav bar starts here*/
+@media (min-width:332px) and (max-width:991px){
+    #mycusnav ul{
+        text-align: center;
+    }
+    #mycusnav ul li{
+        display: inline-block;
+    }
+    #mycusnav ul li a{
+        display: inline-block;
+      }
+    #mycusnav ul li a::after {
+        width: 20%;
+        left: 40%;
+    }
+    #mycusnav ul li a::before {
+        width: 20%;
+        left: 40%;
+    }
+    #mycusnav ul li::after {
+        top: 0;
+        left: 40%;
+      }
+      #mycusnav ul li::before {
+          top: 0;
+          right: 40%;
+      }
+}
+/*nav bar starts here*/
 /*OUR PORTFOLIO starts here*/
 @media (min-width:992px) and (max-width:1200px){
     .img-item img{
