@@ -91,10 +91,13 @@ a .nrml-button:hover {
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 1;
 }
+.about-us-banner .about-bnr-img .container {
+  display: flex;
+  align-items: center;
+  height: 250px;
+}
 .about-us-banner .about-us-bnr-item {
-  position: absolute;
-  top: 30%;
-  left: 43%;
+  position: relative;
   color: white;
   z-index: 99;
   text-align: center;
@@ -649,7 +652,8 @@ a .nrml-button:hover {
   font-size: 22px;
 }
 #blog-view .blog-grid .sort-icon a {
-  padding: 7px 10px;
+  display: inline-block;
+  padding: 5px 10px;
   border: 1px solid #555555;
   transition: 0.3s all linear;
 }
@@ -668,21 +672,13 @@ a .nrml-button:hover {
   padding: 10px;
   margin-right: 12px;
 }
-#blog-view .blog-grid .pages {
-  position: relative;
-}
 #blog-view .blog-grid .pages p {
   font-size: 14px;
-  align-items: center;
-  left: 5%;
-  position: absolute;
-  padding-right: 200px;
-  top: 20%;
+  margin-right: 5px;
 }
 #blog-view .blog-grid .pages nav {
   min-height: 0;
   left: 20%;
-  position: absolute;
 }
 #blog-view .blog-grid .pages nav ul li {
   border: 1px solid #555555;

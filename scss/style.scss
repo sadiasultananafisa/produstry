@@ -81,16 +81,18 @@ a .nrml-button:hover{
     background-color: rgba(0, 0, 0, 0.75);
     z-index: 1;
   }
+  .container{
+    
+      display: flex;
+      align-items: center;
+      height: 250px;
+  }
 }
   .about-us-bnr-item{
-    position: absolute;
-    top: 30%;
-    left: 43%;
+    position: relative;
     color: white;
     z-index: 99;
     text-align: center;
-    
-    
     h2{
       color: white;
       padding: 10px 0;
@@ -644,9 +646,12 @@ form button {
     .sort-icon{
       font-size: 22px;
       a{
-        padding:7px 10px;
+        
+        display: inline-block;
+        padding: 5px 10px;
         border: 1px solid #555555;
-        transition: .3s all linear;
+        transition: 0.3s all linear;
+      
       &:hover{
         background-color: var(--primary-color);
         border: 1px solid var(--primary-color);
@@ -667,21 +672,15 @@ form button {
       }
     }
     .pages{
-      position: relative;
+     
       p{
         font-size: 14px;
-       align-items: center;
-       left: 5%;
-       position: absolute;
-       padding-right: 200px;
-       top:20%;
-
+        margin-right: 5px;
       }
       nav{
         min-height: 0;
-        
        left: 20%;
-       position: absolute;
+       
         ul{
           li{
             border: 1px solid #555555;

@@ -1,20 +1,4 @@
 /*banner starts here*/
-@media (min-width: 332px) and (max-width: 571px) {
-  #about-us-banner {
-    display: none;
-  }
-  .about-us-banner .about-us-bnr-item {
-    left: 30%;
-  }
-}
-@media (min-width: 572px) and (max-width: 991px) {
-  .about-us-banner .about-us-bnr-item {
-    left: 38%;
-  }
-  .about-us-banner .about-bnr-img {
-    min-height: 220px;
-  }
-}
 /*banner starts here*/
 /*ABOUT US PAGE STARTS HERE*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -108,18 +92,42 @@
     justify-content: space-evenly;
   }
   #portfolio .row .port-img {
+    min-width: 300px;
+    text-align: center;
+  }
+}
+@media (min-width: 1400px) {
+  #portfolio .row {
+    justify-content: space-evenly;
+  }
+  #portfolio .row .port-img {
     width: 300px;
     text-align: center;
   }
 }
 /*portfolio starts here*/
 /*blog list view starts here*/
-@media (max-width: 576px) {
+@media (max-width: 320px) {
+  #bloglist .postfilter .filtered-post .fltr-post-contant .fltr-post-img span i {
+    left: 35%;
+  }
   #bloglist .postfilter .filtered-post .fltr-post-contant {
     padding: 20px 0;
   }
+  #bloglist .postfilter .filtered-post .fltr-post-contant .fltr-post-img span i {
+    top: 35%;
+    left: 30%;
+    font-size: 7px;
+    min-height: 7px;
+    min-width: 7px;
+    line-height: 7px;
+  }
+  #bloglist .postfilter .tag-list .widget-title .tag-btn a {
+    font-size: 11px;
+    padding: 5px;
+  }
   #bloglist .postfilter .filtered-post .fltr-post-info h6 {
-    font-size: 18px;
+    font-size: 14px;
   }
   #bloglist .postfilter {
     padding: 0 30px;
@@ -128,10 +136,13 @@
     padding-bottom: 10px;
   }
   #bloglist .blogpost .blog-single-post {
-    margin-bottom: 80px;
+    margin-bottom: 215px;
   }
   .pages {
     display: block;
+  }
+  .page-link {
+    padding: 5px 7px;
   }
   .pagination {
     font-size: 11px;
@@ -152,8 +163,76 @@
     padding: 13px 0;
     text-align: left;
   }
-  #bloglist .postfilter .filtered-post .fltr-post-contant .fltr-post-img img {
-    width: 100%;
+  #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant {
+    -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+    top: 0;
+    padding: 10px;
+    margin: -1px !important;
+  }
+  #bloglist .blogpost .blog-single-post .blogpost-img {
+    min-height: 250px;
+  }
+  #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant h4 {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 321px) and (max-width: 575px) {
+  #bloglist .postfilter .filtered-post .fltr-post-contant .fltr-post-img span i {
+    left: 35%;
+  }
+  #bloglist .postfilter .filtered-post .fltr-post-contant {
+    padding: 20px 0;
+  }
+  #bloglist .postfilter .filtered-post .fltr-post-contant .fltr-post-img span i {
+    top: 35%;
+    left: 30%;
+    font-size: 7px;
+    min-height: 7px;
+    min-width: 7px;
+    line-height: 7px;
+  }
+  #bloglist .postfilter .tag-list .widget-title .tag-btn a {
+    font-size: 11px;
+    padding: 5px;
+  }
+  #bloglist .postfilter .filtered-post .fltr-post-info h6 {
+    font-size: 14px;
+  }
+  #bloglist .postfilter {
+    padding: 0 30px;
+  }
+  #bloglist .blogpost {
+    padding-bottom: 10px;
+  }
+  #bloglist .blogpost .blog-single-post {
+    margin-bottom: 150px;
+  }
+  .pages {
+    display: block;
+  }
+  .page-link {
+    padding: 5px 7px;
+  }
+  .pagination {
+    font-size: 11px;
+  }
+  #blog-view .blog-grid .pages nav {
+    right: 25px;
+  }
+  #blog-view .blog-grid .pages p {
+    top: 10px;
+    left: 10px !important;
+  }
+  #blog-view .blog-grid .sort-select {
+    font-size: 14px;
+    margin: 20px 0 !important;
+  }
+  #blog-view .blog-grid {
+    border: 0px solid #dddddd;
+    padding: 13px 0;
+    text-align: left;
   }
   #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant {
     -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -237,6 +316,16 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  #blog-view .blog-grid .sort-select select {
+    font-size: 11px;
+  }
+  #blog-view .blog-grid .sort-select {
+    font-size: 11px;
+    padding: 0 !important;
+  }
+  #blog-view .blog-grid .sort-select select {
+    padding: 5px;
+  }
   #bloglist .blogpost .blog-single-post .blogpost-img .bloglist-contant h4 {
     font-size: 16px;
   }
@@ -258,9 +347,6 @@
     top: 25%;
     padding: 20px 15px;
     margin: 0 10px !important;
-  }
-  #blog-view .blog-grid .sort-select {
-    font-size: 11px;
   }
   .page-link {
     padding: 7px !important;
@@ -310,9 +396,9 @@
     line-height: 9px;
   }
 }
-@media (min-width: 992) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   #bloglist .blogpost .blog-single-post {
-    margin-bottom: 300px;
+    margin-bottom: 150px !important;
   }
   #bloglist .postfilter .filtered-post .fltr-post-info a {
     font-size: 10px;
@@ -327,6 +413,10 @@
     min-width: 15px;
     line-height: 15px;
   }
+  #blog-view .blog-grid .sort-select select {
+    padding: 6px;
+    margin-right: 5px;
+  }
 }
 /*blog grid view*/
 @media (min-width: 332px) and (max-width: 767px) {
@@ -334,7 +424,7 @@
     justify-content: space-around !important;
   }
   #bloggrid-view .bloggrid .row .bloggrid-contant {
-    margin-bottom: 250px;
+    margin-bottom: 250px !important;
   }
   #bloggrid-view .bloggrid .row .bloggrid-contant .bloggrid-info h4 {
     font-size: 16px;
