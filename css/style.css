@@ -230,7 +230,7 @@
   /*NAV ends here*/
   /*BANNAR starts here*/
   .slide-banner{
-    min-height: 650px;
+    min-height: 550px;
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -285,10 +285,12 @@
     color: var(--secondary-color);
     transition: 0.3s;
   }
-  
+  .banner{
+    position: relative;
+  }
   .banner-right-arrow {
     position: absolute;
-    top: 70%;
+    top: 50%;
     right: 25px;
     z-index: 999;
     font-size: 26px;
@@ -300,7 +302,7 @@
   }
   .banner-left-arrow{
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 25px;
     z-index: 999;
     font-size: 26px;
@@ -545,29 +547,29 @@
   #About-Us h2{
     text-align: left;
     padding-left: 10px;
-    padding-top: 10px;
+    padding-bottom: 10px!important;
   }
   .about-us-img{
-    height: 440px;
+    min-height: 440px;
     background-size: cover;
     background-position: center;
     position: relative;
     z-index: -1;
   }
   .about-us-img img{
-    height: 440px;
+    min-height: 440px;
     position: absolute;
     top: 0;
     right: -36%;
     text-align: center;
   }
   .about-us-content{
-    padding-left:40px ;
+    padding-left:60px ;
   }
   .about-us-content .nav-tabs .nav-item{
     position: relative;
     padding-right: 10px;
-    padding-bottom: 13px;
+    padding-bottom: 10px;
     
   }
   .about-us-content .nav-tabs .nav-item .nav-link{
@@ -613,8 +615,10 @@
     font-size: 14px;
     line-height: 25px;
     padding-left:25px;
+    padding-top: 10px;
   }
   .tab-content p{
+    font-size: 16px!important;
     margin-bottom: 20px;
     text-align: left;
     padding-left: 0;
@@ -710,7 +714,8 @@
     z-index: -1;
   }
   #counter-up .container .row{
-    height: 200px;
+    min-height: 200px;
+    align-items: center;
   }
   #counter-up .count h1{
     font-size: 35px;

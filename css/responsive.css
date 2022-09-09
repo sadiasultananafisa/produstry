@@ -1,3 +1,20 @@
+/*common part css*/
+@media (min-width:320px) and (max-width:767px){
+    p{
+        font-size: 14px;
+    }
+    #backToTop {
+        bottom: 3px;
+        right: 1px;
+        padding: 7px;
+        font-size: 11px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+}
+
+
 @media (min-width: 320px) and (max-width: 991px) {
     .location p {
         text-align: center;
@@ -25,7 +42,7 @@
         visibility: visible;
         transition: 0.3s ease-in-out;
     }
-    nav {
+    #navbar {
         min-height: 100px;
         padding: 0!important;
     }
@@ -58,7 +75,55 @@
 }
 /*banner ends here*/
 /*ABOUT US starts here*/
-@media (min-width:836px) and (max-width:991px){
+
+@media (min-width:320px) and (max-width:767px){
+    .about-us-img {
+        display: none;
+    }
+    .about-us-content{
+        width: 100%;
+    }
+    .about-us-content h2{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .Our-Services {
+        padding: 0;
+        
+    }
+    #About-Us {
+        padding: 0;
+    }
+    .about-us-content h2 {
+        margin-bottom: 0;
+    }
+    .about-us-content .nav-tabs .nav-item {
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+    .about-us-content {
+        padding: 20px;
+    }
+    .about-us-content .nav-tabs .nav-item .nav-link {
+        padding-left: 0!important;
+        font-size: 12px;
+    }
+    .about-us-content .tab-content {
+        line-height: 150%;
+        padding-left: 0px;
+        padding-top: 15px;
+    }
+    .tab-content p {
+        font-size: 14px!important;
+        
+    }
+    .tab-pane a {
+        font-weight: 400;
+        font-size: 14px;
+        padding: 7px;    
+    }
+}
+@media (min-width:768px) and (max-width:991px){
     .about-us-img img {
         display: none;
     }
@@ -74,21 +139,55 @@
         display: inline-block;
     }
     .about-us-content .nav.nav-tabs .nav-item {
-    
+
         padding-right: 0px;
         padding-bottom: 10px;
     }
+    .about-us-content .nav-tabs .nav-item .nav-link {
+        padding-left: 2px!important;
+        font-size: 16px;
+    }
+    .tab-content p {
+        font-size: 14px!important;
+        
+    }
+    .about-us-content .tab-content {
+        padding-top: 10px;
+        line-height: 150%;
+        padding-left: 0px;
+    }
+    
 }
-@media (min-width:320px) and (max-width:835px){
-    .about-us-img {
-        display: none;
+@media (min-width:992px) and (max-width:1199px){
+    .about-us-content .nav-tabs .nav-item {
+        padding-right: 10px;
+        padding-bottom: 0px;
     }
-    .about-us-content{
-        width: 100%;
+    .about-us-content .tab-content {
+        padding-left: 5px;
+        padding-top: 20px;
     }
-    .about-us-content h2{
-        text-align: center;
-        margin-bottom: 30px;
+    #About-Us h2 {
+        padding-left: 10px;
+        padding-top: 0px!important;
+        padding-bottom: 0px!important;
+    }
+    .about-us-img img{
+       display: none;
+    }
+    .about-us-content {
+         padding-left: 0px; 
+    }
+    .tab-content p {
+        line-height: 180%;
+    }
+    .about-us-content .nav-tabs .nav-item {
+        padding:  10px 7px;
+    }
+}
+@media (min-width:1450px){
+    .about-us-img img {
+        right: -20%;
     }
 }
 /*ABOUT US ends here*/
@@ -157,6 +256,22 @@
       }
 }
 /*OUR PORTFOLIO ends here*/
+
+/*counter up starts here*/
+@media (min-width:320px) and (max-width:767px){
+    #counter-up .container .row {
+        height: 150px;
+    }
+    #counter-up .count h1 {
+        font-size: 20px;
+    }
+    #counter-up .count h3 {
+        font-size: 13px;
+    }
+}
+/*counter up ends here*/
+
+
 /*blogs starts here*/
 @media (min-width:768px) and (max-width:991px){
     #blog .blog-content{
@@ -168,3 +283,19 @@
     }
 }
 /*blogs ends here*/
+
+/*footer starts here*/
+@media (min-width:320px) and (max-width:767px){
+    .latest-news-details h6 {
+        font-size: 12px!important;
+    }
+    .latest-news-details p {
+        font-size: 11px;
+        padding-bottom: 10px;
+    }
+    .latest-news-details a {
+        font-size: 10px;
+        padding-right: 0px; 
+    }
+}
+/*footer ends here*/
