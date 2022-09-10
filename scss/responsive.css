@@ -23,7 +23,7 @@
     display: none;
   }
 }
-@media (min-width: 332px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   #about-produstry .about-produstry {
     margin: 50px 0;
   }
@@ -59,13 +59,41 @@
 }
 /*ABOUT US PAGE endS HERE*/
 /*contact us starts here*/
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  #contact-map {
+    margin-bottom: 0px;
+  }
   #contact-form .contact-form-col {
     background: none;
   }
   #contact-form .contact-form-col .row {
-    left: 7%;
-    top: 5%;
+    position: initial;
+    justify-content: center;
+    margin: 0 10px !important;
+  }
+  #contact-address .address p {
+    padding: 10px 0;
+    font-size: 13px;
+  }
+  #contact-address .address p a {
+    font-size: 12px;
+    text-align: center;
+  }
+  #contact-address .address .col-md-4 {
+    padding: 20px 0;
+  }
+  #contact-address .address {
+    text-align: center;
+    justify-content: center;
+  }
+  #contact-address .address .cnt-addrs:nth-child(2) {
+    border-bottom: 0.3px solid var(--secondary-color);
+    border-top: 0.3px solid var(--secondary-color);
+    margin-bottom: 10px;
+    padding: 20px 0;
+  }
+  #contact-address .address p::before {
+    display: none;
   }
 }
 /*contact us starts here*/
@@ -419,17 +447,24 @@
   }
 }
 /*blog grid view*/
-@media (min-width: 332px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   #bloggrid-view .bloggrid .row {
     justify-content: space-around !important;
   }
   #bloggrid-view .bloggrid .row .bloggrid-contant {
     margin-bottom: 250px !important;
   }
+  #bloggrid-view .bloggrid .row .bloggrid-contant .bloggrid-info {
+    border: 1px solid rgba(117, 115, 115, 0.2862745098);
+  }
   #bloggrid-view .bloggrid .row .bloggrid-contant .bloggrid-info h4 {
     font-size: 16px;
     font-weight: 500;
     text-align: left;
+  }
+  #bloggrid-view .bloggrid .row .bloggrid-contant .bloggrid-info {
+    bottom: 19%;
+    padding: 60px 25px 20px 25px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
